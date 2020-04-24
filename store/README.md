@@ -1,4 +1,4 @@
-# TIENDA
+# STORE
 
 ** Este directorio no es obligatorio, puede eliminarlo si no desea usarlo. **
 

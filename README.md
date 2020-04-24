@@ -1,6 +1,6 @@
 # web-bisuteria
 
-> Web de Bisuteria
+> My fantastic Nuxt.js project
 
 ## Build Setup
 
@@ -9,10 +9,10 @@
 $ npm install
 
 # serve with hot reload at localhost:3000
-$ npm run start
+$ npm run dev
 
 # build for production and launch server
-$ npm run production
+$ npm run build
 $ npm run start
 
 # generate static project

@@ -1,6 +1,9 @@
 
-module.exports = {
+export default {
   mode: 'spa',
+  router: {
+    base: '/web-bisuteria/'
+  },
   /*
   ** Headers of the page
   */
@@ -38,8 +41,6 @@ module.exports = {
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://bootstrap-vue.js.org
-    'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
