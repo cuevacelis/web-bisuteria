@@ -1,33 +1,19 @@
 <template>
   <div class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        web-bisuteria
-      </h1>
-      <h2 class="subtitle">
-        Proyecto de una pagina Web de Bisuteria.
-      </h2>
-      <div class="links">
-        <nuxt-link to="/prueba" class="button--green">Hazme Click!</nuxt-link>
-        <a
-          href="https://github.com/cuevacelis/web-bisuteria"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+      <img alt="Vue logo" src="../assets/img/logo.png">
+      <nuxt-link to="/" class="button--green">Volver a la Pagina Principal!</nuxt-link>
+      <HelloWorld msg="Bienvenido a su aplicación Vue.js"/>
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '../components/Logo.vue'
+import HelloWorld from '../components/HelloWorld.vue'
 
 export default {
   components: {
-    Logo
+    HelloWorld
   }
 }
 </script>

@@ -1,6 +1,6 @@
 # web-bisuteria
 
-> My fantastic Nuxt.js project
+> Proyecto de una Web de Bisuteria con VueJS y NuxtJS
 
 ## Build Setup
 
