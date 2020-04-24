@@ -1,11 +1,9 @@
-# ESTATIC
-
-** Este directorio no es obligatorio, puede eliminarlo si no desea usarlo. **
+# STATIC
+Directorio publicado en GitHub-Pages, cuyo contendio fue procesado en archivos estaticos.
+Lo cual conviene en una mejora circunstancial del SEO.
 
 Este directorio contiene sus archivos estáticos.
 Cada archivo dentro de este directorio está asignado a `/`.
 Por lo tanto, desea eliminar este archivo README.md antes de implementarlo en producción.
 
 Ejemplo: `/ static / robots.txt` se asigna como` / robots.txt`.
-
-Más información sobre el uso de este directorio en [la documentación] (https://nuxtjs.org/guide/assets#static).
