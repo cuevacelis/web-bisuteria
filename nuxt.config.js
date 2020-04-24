@@ -2,7 +2,7 @@
 export default {
   mode: 'spa',
   router: {
-    base: '/web-bisuteria/'
+    base: '/'
   },
   /*
   ** Headers of the page
@@ -43,7 +43,7 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    //'@nuxtjs/pwa',
+    '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
   ],
