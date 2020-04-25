@@ -3,7 +3,7 @@
     <div>
       <logo />
       <h1 class="title">
-        web-bisuteria xd
+        Web-bisuteria
       </h1>
       <h2 class="subtitle">
         Proyecto de una pagina Web de Bisuteria.
