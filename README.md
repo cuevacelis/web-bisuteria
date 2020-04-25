@@ -1,21 +1,20 @@
-# web-bisuteria
+# Web de Bisuteria
 
 > Proyecto de una Web de Bisuteria con VueJS y NuxtJS
 
 ## Build Setup
 
 ```bash
-# install dependencies
+# Instala las Dependencias
 $ npm install
 
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
+# Enciende el Servidor en localhost:3000
 $ npm run start
 
-# generate static project
+# Empaqueta para producción
+$ npm run build
+
+# Generador de contenido estatico amigable con SEO
 $ npm run generate
 ```
 
