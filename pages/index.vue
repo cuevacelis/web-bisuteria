@@ -2,10 +2,10 @@
     <div>
       <header id="header">
         <div class="container">
-          <a href="index.html" id="logo" title="Diana’s jewelry">Diana’s jewelry</a>
+          <nuxt-link to="/" id="logo" title="Diana’s jewelry">Diana’s jewelry</nuxt-link>
           <div class="right-links">
             <ul>
-              <li><a href="cart.html"><span class="ico-products"></span>3 products, $4 500.00</a></li>
+              <li><nuxt-link to="cart.html"><span class="ico-products"></span>3 products, $4 500.00</nuxt-link></li>
               <li><a href="#"><span class="ico-account"></span>Account</a></li>
               <li><a href="#"><span class="ico-signout"></span>Sign out</a></li>
             </ul>
@@ -18,12 +18,12 @@
         <div class="container">
           <div class="trigger"></div>
           <ul>
-            <li><a href="products.html">New collection</a></li>
-            <li><a href="products.html">necklaces</a></li>
-            <li><a href="products.html">earrings</a></li>
-            <li><a href="products.html">Rings</a></li>
-            <li><a href="products.html">Gift cards</a></li>
-            <li><a href="products.html">Promotions</a></li>
+            <li><nuxt-link to="products">New collection</nuxt-link></li>
+            <li><nuxt-link to="products">earrings</nuxt-link></li>
+            <li><nuxt-link to="products">Rings</nuxt-link></li>
+            <li><nuxt-link to="products">Gift cards</nuxt-link></li>
+            <li><nuxt-link to="products">Promotions</nuxt-link></li>
+            <li><nuxt-link to="products">necklaces</nuxt-link></li>
           </ul>
         </div>
         <!-- / container -->
@@ -40,11 +40,6 @@
           <li class="purple" style="background-image: url(images/01.jpg)">
             <h3>She will say “yes”</h3>
             <h2>engagement ring</h2>
-            <a href="#" class="btn-more">Read more</a>
-          </li>
-          <li class="yellow" style="background-image: url(images/02.jpg)">
-            <h3>You deserve to be beauty</h3>
-            <h2>golden bracelets</h2>
             <a href="#" class="btn-more">Read more</a>
           </li>
         </ul>
