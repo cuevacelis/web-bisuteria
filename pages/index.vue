@@ -5,7 +5,7 @@
           <nuxt-link to="/" id="logo" title="Diana’s jewelry">Diana’s jewelry</nuxt-link>
           <div class="right-links">
             <ul>
-              <li><nuxt-link to="cart.html"><span class="ico-products"></span>3 products, $4 500.00</nuxt-link></li>
+              <li><nuxt-link to="cart"><span class="ico-products"></span>3 products, $4 500.00</nuxt-link></li>
               <li><a href="#"><span class="ico-account"></span>Account</a></li>
               <li><a href="#"><span class="ico-signout"></span>Sign out</a></li>
             </ul>
@@ -176,7 +176,7 @@
   import LoadScript from 'vue-plugin-load-script';
 
   Vue.use(LoadScript)
-  Vue.loadScript("http://code.jquery.com/jquery-1.11.1.min.js")
+  Vue.loadScript("https://code.jquery.com/jquery-1.11.1.min.js")
 
   export default {
     components: {
