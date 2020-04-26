@@ -179,14 +179,12 @@
 <script>
   import Vue from 'vue'
   import LoadScript from 'vue-plugin-load-script';
-  import Logo from '../components/Logo.vue'
 
   Vue.use(LoadScript)
   Vue.loadScript("http://code.jquery.com/jquery-1.11.1.min.js")
 
   export default {
     components: {
-      Logo
     }
   }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      <img alt="Vue logo" src="../assets/img/logo.png">
+      <img alt="Vue logo" src="~/assets/images/logo.png">
       <nuxt-link to="/" class="button--green">Volver a la Pagina Principal!</nuxt-link>
       <HelloWorld msg="Bienvenido a su aplicación Vue.js"/>
     </div>
