@@ -7,26 +7,26 @@
           <div class="container">
             <div class="trigger"></div>
             <ul>
-              <li><nuxt-link to="products">New collection</nuxt-link></li>
-              <li><nuxt-link to="products">earrings</nuxt-link></li>
-              <li><nuxt-link to="products">Rings</nuxt-link></li>
-              <li><nuxt-link to="products">Gift cards</nuxt-link></li>
-              <li><nuxt-link to="products">Promotions</nuxt-link></li>
-              <li><nuxt-link to="products">necklaces</nuxt-link></li>
+              <li><nuxt-link to="products">Nueva Coleccion</nuxt-link></li>
+              <li><nuxt-link to="products">Pendientes</nuxt-link></li>
+              <li><nuxt-link to="products">Anillos</nuxt-link></li>
+              <li><nuxt-link to="products">Tarjetas de Regalo</nuxt-link></li>
+              <li><nuxt-link to="products">Promociones</nuxt-link></li>
+              <li><nuxt-link to="products">Collares</nuxt-link></li>
             </ul>
           </div>
         </nav>
 
         <div id="slider">
           <ul>
-            <li style="background-image: url(images/0.jpg)">
-              <h3>Make your life better</h3>
-              <h2>Genuine diamonds</h2>
+            <li v-bind:style="{'background-image': 'url(' + require('../assets/images/0.jpg') + ')'}">
+              <h3>HAZ TU VIDA MEJOR</h3>
+              <h2>Diamantes Genuinos</h2>
               <a href="#" class="btn-more">Read more</a>
             </li>
-            <li class="purple" style="background-image: url(images/01.jpg)">
-              <h3>She will say “yes”</h3>
-              <h2>engagement ring</h2>
+            <li class="purple" v-bind:style="{'background-image': 'url(' + require('../assets/images/01.jpg') + ')'}">
+              <h3>ELLA DIRA "SI"</h3>
+              <h2>Anillo de Compromiso</h2>
               <a href="#" class="btn-more">Read more</a>
             </li>
           </ul>
@@ -39,19 +39,19 @@
               <h2>Last added products</h2>
               <section class="products">
                 <article>
-                  <img src="~/assets/images/1.jpg" alt="">
+                  <img src="../assets/images/1.jpg" alt="">
                   <h3>Excepteur sint occaecat</h3>
                   <h4>$1 850.00</h4>
                   <a href="cart.html" class="btn-add">Add to cart</a>
                 </article>
                 <article>
-                  <img src="~/assets/images/11.jpg" alt="">
+                  <img src="../assets/images/11.jpg" alt="">
                   <h3>Lorem ipsum dolor</h3>
                   <h4>$990.00</h4>
                   <a href="cart.html" class="btn-add">Add to cart</a>
                 </article>
                 <article>
-                  <img src="~/assets/images/12.jpg" alt="">
+                  <img src="../assets/images/12.jpg" alt="">
                   <h3>cupidatat non proident</h3>
                   <h4>$1 200.00</h4>
                   <a href="cart.html" class="btn-add">Add to cart</a>
@@ -71,7 +71,7 @@
               </section>
             </div>
             <section class="quick-links">
-              <article style="background-image: url(~/assets/images/2.jpg)">
+              <article v-bind:style="{'background-image': 'url(' + require('../assets/images/2.jpg') + ')'}">
                 <a href="#" class="table">
                   <div class="cell">
                     <div class="text">
@@ -82,7 +82,7 @@
                   </div>
                 </a>
               </article>
-              <article class="red" style="background-image: url(~/assets/images/3.jpg)">
+              <article class="red" v-bind:style="{'background-image': 'url(' + require('../assets/images/3.jpg') + ')'}">
                 <a href="#" class="table">
                   <div class="cell">
                     <div class="text">
@@ -95,7 +95,7 @@
                   </div>
                 </a>
               </article>
-              <article style="background-image: url(~/assets/images/4.jpg)">
+              <article v-bind:style="{'background-image': 'url(' + require('../assets/images/4.jpg') + ')'}">
                 <a href="#" class="table">
                   <div class="cell">
                     <div class="text">
