@@ -12,4 +12,3 @@ Vue.loadScript("https://code.jquery.com/jquery-1.11.1.min.js")
 .catch(() => {
     alert("Problema al cargar los scripts de la plantilla")
 });
-
