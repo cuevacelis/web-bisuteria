@@ -120,6 +120,9 @@ export default {
 </script>
 
 <style scoped>
+  .marketing{
+    margin-top:40px;
+  }
   .carousel-caption {
     bottom: 280px;
   }
