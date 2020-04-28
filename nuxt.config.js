@@ -8,7 +8,7 @@ export default {
   ** Encabezados de la página
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Jade Fashion',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -42,7 +42,6 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/vuetify',
   ],
   /*
   ** Nuxt.js modules

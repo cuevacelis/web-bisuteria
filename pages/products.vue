@@ -1,7 +1,5 @@
 <template>
   <div>
-    <Header/>
-
     <section class="jumbotron text-center">
       <div class="container">
         <h1>Productos</h1>
@@ -156,20 +154,13 @@
         </div>
       </div>
     </div>
-
-    <Footer/>
+    
   </div>
 </template>
 
 <script>
-  const Header = () => import('../components/Header')
-  const Footer = () => import('../components/Footer')
 
   export default {
-    components: {
-      Header,
-      Footer
-    }
   }
 </script>
 
