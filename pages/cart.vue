@@ -1,8 +1,10 @@
 <template>
   <div class="contenido">
-      <div>
-        <nuxt-link to="/" class="button--green">Volver al Inicio</nuxt-link>
-      </div>
+    <div>
+      <nuxt-link to="/" class="button--green">
+        Volver al Inicio
+      </nuxt-link>
+    </div>
   </div>
 </template>
 
