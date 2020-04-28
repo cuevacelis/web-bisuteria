@@ -1,9 +1,6 @@
 
 export default {
-  mode: 'spa',
-  router: {
-    base: '/'
-  },
+  mode: 'universal',
   /*
   ** Encabezados de la página
   */
@@ -12,15 +9,15 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: '' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {
-      }
-    ],
+      { src: 'https://code.jquery.com/jquery-3.4.1.slim.min.js' },
+      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' }
+    ]
   },
   /*
   ** Personaliza el color de la barra de progreso
@@ -36,12 +33,13 @@ export default {
   ** Complementos para cargar antes de montar la aplicación
   */
   plugins: [
-    '~/plugins/scriptsPlantilla',
+    '~plugins/scriptsPlantilla'
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    // '@nuxtjs/eslint-module'
   ],
   /*
   ** Nuxt.js modules
@@ -49,16 +47,16 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    //'@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
+    '@nuxtjs/dotenv'
   ],
-  //PWA
-  /*pwa: {
+  // PWA
+  /* pwa: {
     workbox: {
       workbox: false
     }
-  },*/
+  }, */
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -72,7 +70,7 @@ export default {
     /*
     ** Puede ampliar la configuración del Webpack aquí
     */
-    extend (config, ctx) {
-    }
+    extend (config, ctx) {},
+    transpile: ['isServer']
   }
 }
