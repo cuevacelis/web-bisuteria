@@ -1,13 +1,9 @@
 import Vue from 'vue'
 import LoadScript from 'vue-plugin-load-script';
-/*import pluginPlantilla from  '../assets/js/plugins'
-import MainPlantilla from '../assets/js/main'*/
-
 Vue.use(LoadScript)
-Vue.loadScript("https://code.jquery.com/jquery-1.11.1.min.js")
+Vue.loadScript("https://code.jquery.com/jquery-3.4.1.slim.min.js")
 .then(() => {
-    import('../assets/js/plugins')
-    import('../assets/js/main')
+    Vue.loadScript("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
 })
 .catch(() => {
     alert("Problema al cargar los scripts de la plantilla")

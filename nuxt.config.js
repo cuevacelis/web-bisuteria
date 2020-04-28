@@ -5,7 +5,7 @@ export default {
     base: '/'
   },
   /*
-  ** Headers of the page
+  ** Encabezados de la página
   */
   head: {
     title: process.env.npm_package_name || '',
@@ -18,21 +18,22 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
+      {
+      }
     ],
   },
   /*
-  ** Customize the progress-bar color
+  ** Personaliza el color de la barra de progreso
   */
   loading: { color: '#fff' },
   /*
-  ** Global CSS
+  ** CSS global
   */
   css: [
-    '@/assets/css/style.css',
-    //'bootstrap/dist/css/bootstrap.min.css'
+    'bootstrap/dist/css/bootstrap.min.css'
   ],
   /*
-  ** Plugins to load before mounting the App
+  ** Complementos para cargar antes de montar la aplicación
   */
   plugins: [
     '~/plugins/scriptsPlantilla',
@@ -41,6 +42,7 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
+    '@nuxtjs/vuetify',
   ],
   /*
   ** Nuxt.js modules
@@ -52,6 +54,7 @@ export default {
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
   ],
+  //PWA
   /*pwa: {
     workbox: {
       workbox: false
@@ -64,11 +67,11 @@ export default {
   axios: {
   },
   /*
-  ** Build configuration
+  ** Configuración de compilación
   */
   build: {
     /*
-    ** You can extend webpack config here
+    ** Puede ampliar la configuración del Webpack aquí
     */
     extend (config, ctx) {
     }

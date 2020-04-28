@@ -3,114 +3,106 @@
       <Header/>
 
       <div class="contenido">
-        <nav id="menu">
-          <div class="container">
-            <div class="trigger"></div>
-            <ul>
-              <li><nuxt-link to="products">Nueva Coleccion</nuxt-link></li>
-              <li><nuxt-link to="products">Pendientes</nuxt-link></li>
-              <li><nuxt-link to="products">Anillos</nuxt-link></li>
-              <li><nuxt-link to="products">Tarjetas de Regalo</nuxt-link></li>
-              <li><nuxt-link to="products">Promociones</nuxt-link></li>
-              <li><nuxt-link to="products">Collares</nuxt-link></li>
-            </ul>
-          </div>
-        </nav>
 
-        <div id="slider">
-          <ul>
-            <li v-bind:style="{'background-image': 'url(' + require('../assets/images/0.jpg') + ')'}">
-              <h3>HAZ TU VIDA MEJOR</h3>
-              <h2>Diamantes Genuinos</h2>
-              <a href="#" class="btn-more">Read more</a>
-            </li>
-            <li class="purple" v-bind:style="{'background-image': 'url(' + require('../assets/images/01.jpg') + ')'}">
-              <h3>ELLA DIRA "SI"</h3>
-              <h2>Anillo de Compromiso</h2>
-              <a href="#" class="btn-more">Read more</a>
-            </li>
-          </ul>
+        <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="~/assets/images/0.jpg" class="d-block w-100 "  alt="..." >
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="titulo">HAZ TU VIDA MEJOR</h3>
+                <H2 class="sub-titulo">Diamantes Genuinos</H2>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="~/assets/images/01.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h3 class="titulo">ELLA DIRA "SI"</h3>
+                <h2 class="sub-titulo">Anillo de Compromiso</h2>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
 
-        <div id="body">
-          <div class="container">
-            <div class="last-products">
-              <h2>Last added products</h2>
-              <section class="products">
-                <article>
-                  <img src="../assets/images/1.jpg" alt="">
-                  <h3>Excepteur sint occaecat</h3>
-                  <h4>$1 850.00</h4>
-                  <a href="cart.html" class="btn-add">Add to cart</a>
-                </article>
-                <article>
-                  <img src="../assets/images/11.jpg" alt="">
-                  <h3>Lorem ipsum dolor</h3>
-                  <h4>$990.00</h4>
-                  <a href="cart.html" class="btn-add">Add to cart</a>
-                </article>
-                <article>
-                  <img src="../assets/images/12.jpg" alt="">
-                  <h3>cupidatat non proident</h3>
-                  <h4>$1 200.00</h4>
-                  <a href="cart.html" class="btn-add">Add to cart</a>
-                </article>
-                <article>
-                  <img src="~/assets/images/13.jpg" alt="">
-                  <h3>Duis aute irure</h3>
-                  <h4>$2 650.00</h4>
-                  <a href="cart.html" class="btn-add">Add to cart</a>
-                </article>
-                <article>
-                  <img src="~/assets/images/14.jpg" alt="">
-                  <h3>magna aliqua</h3>
-                  <h4>$3 500.00</h4>
-                  <a href="cart.html" class="btn-add">Add to cart</a>
-                </article>
-              </section>
+
+        <div class="container marketing">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/48359486_1835382333257256_931420476259958784_n.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_eui2=AeF27zwo5vfWpQJu_rthCAieq2qHAa_thX-raocBr-2Ff8JybAXS8YsO_z-3N295us1YJ5ie-RuHweH1g0u0feoo&_nc_ohc=bBhQvrjxhCAAX8WD4b2&_nc_ht=scontent.ftru2-1.fna&oh=24ecbb949f339dea3e135308dfc62b65&oe=5ECB4247" width="140" height="140" ></img>
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" src="https://scontent.ftru2-2.fna.fbcdn.net/v/t1.0-9/26169350_1431848840277276_4031138427698201783_n.jpg?_nc_cat=107&_nc_sid=8bfeb9&_nc_eui2=AeHY9ChfQQYkHCBOq5n6GqMVL5RiZVJbC10vlGJlUlsLXZFIKkyEtcIwk_CJ3o11aUZzouBXrrsRdQz_z_bqjyCa&_nc_ohc=ahFNyHPo7zQAX-_p0Rd&_nc_ht=scontent.ftru2-2.fna&oh=abb8170b1a7cf0d174668b3883a86084&oe=5ECEEAAC" width="140" height="140" ></img>
+                <h2>Heading</h2>
+                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+              <div class="col-lg-4">
+                <img class="bd-placeholder-img rounded-circle" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/77272478_2431629953632488_3608720200288960512_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeEGcXqPD7OjfrkENWib2nFhOjcLR2aY6BI6NwtHZpjoEhTrFCPOoN5QymSAA1QTauwPgrKk2xeKbukYhsuoIq2b&_nc_ohc=tBcZd2WK1ZAAX-R7W3t&_nc_ht=scontent.ftru2-3.fna&oh=e14a43c0384dea0f24f1d216f15348f3&oe=5ECDB9EF" width="140" height="140" ></img>
+                <h2>Heading</h2>
+                <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">View details »</a></p>
+              </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+
+            <!-- START THE FEATURETTES -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/89920171_2672160692912745_4511410785607483392_n.jpg?_nc_cat=102&_nc_sid=8bfeb9&_nc_eui2=AeF259Oku1ya7WKj7x3a7-3tz7Oxr6D9D4TPs7GvoP0PhE3fKO2cMOTWsHSiwYenCVPgjss2nYYYezfMBdjLq2Km&_nc_ohc=kc_CfNqJK7MAX9SI788&_nc_ht=scontent.ftru2-1.fna&oh=aae584430e3135980f1b064422fd03a3&oe=5ECBEF13" width="500" height="500"/>
+              </div>
             </div>
-            <section class="quick-links">
-              <article v-bind:style="{'background-image': 'url(' + require('../assets/images/2.jpg') + ')'}">
-                <a href="#" class="table">
-                  <div class="cell">
-                    <div class="text">
-                      <h4>Lorem ipsum</h4>
-                      <hr>
-                      <h3>Dolor sit amet</h3>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article class="red" v-bind:style="{'background-image': 'url(' + require('../assets/images/3.jpg') + ')'}">
-                <a href="#" class="table">
-                  <div class="cell">
-                    <div class="text">
-                      <h4>consequatur</h4>
-                      <hr>
-                      <h3>voluptatem</h3>
-                      <hr>
-                      <p>Accusantium</p>
-                    </div>
-                  </div>
-                </a>
-              </article>
-              <article v-bind:style="{'background-image': 'url(' + require('../assets/images/4.jpg') + ')'}">
-                <a href="#" class="table">
-                  <div class="cell">
-                    <div class="text">
-                      <h4>culpa qui officia</h4>
-                      <hr>
-                      <h3>magnam aliquam</h3>
-                    </div>
-                  </div>
-                </a>
-              </article>
-            </section>
-          </div>
-          <!-- / container -->
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              </div>
+              <div class="col-md-5 order-md-1">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/89238431_2672136692915145_5270236991760367616_n.jpg?_nc_cat=108&_nc_sid=8bfeb9&_nc_eui2=AeGxPhNYpmFHwg4jc6ELXGHlNA_RlZ7J1WM0D9GVnsnVY2vIq9fqM5hLUQusKbBK_tNVDRjrUMJEnA_Wc-Ag8Mbx&_nc_ohc=qMaZ8WswuBIAX9OwAXp&_nc_ht=scontent.ftru2-3.fna&oh=87d1b6d0d8a4019f9b256c989bebf34a&oe=5ECBFDD6" width="500" height="500"/>
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+              </div>
+              <div class="col-md-5">
+                <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/p720x720/72849107_2363049217157229_5437505124463280128_o.jpg?_nc_cat=108&_nc_sid=8bfeb9&_nc_eui2=AeFSdiT5LErMTVxMiKSYk7x83jftGDs0M1feN-0YOzQzV3JXzUUJ_qDOZITQ0PsMspfhJqZlsnK4bRRrbROvFr_A&_nc_ohc=R9iCw3z3hWcAX8W5vVh&_nc_ht=scontent.ftru2-3.fna&_nc_tp=6&oh=f7d419e77538ec11af78632f963a172c&oe=5ECC31E6" width="500" height="500"/>
+              </div>
+            </div>
+
+            <hr class="featurette-divider">
         </div>
       </div>
-      
+
       <Footer/>
   </div>
 </template>
@@ -128,95 +120,26 @@
 </script>
 
 <style scoped>
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-}
-
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  margin-bottom: 4rem;
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 32rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 20rem;
-}
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -.05rem;
-}
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
+  .carousel-caption {
+    bottom: 280px;
   }
 
-  .featurette-heading {
-    font-size: 50px;
+  .titulo{
+    color: #a5b0d6;
+    font-family: Novecentowide;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 4.5px;
+    line-height: 28px;
+    padding: 80px 0 0;
   }
-}
 
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
+  .sub-titulo{
+    font-family: Novecentowide;
+    color: #fff;
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 9px;
+    font-weight: 300;
   }
-}
-
 </style>

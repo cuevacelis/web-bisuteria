@@ -38,4 +38,12 @@
 </script>
 
 <style scoped>
+#footer {
+    clear: both;
+    background: #222224 url('/assets/images/bg_footer.png');
+    padding: 27px 0 0;
+    color: #a5a5aa;
+    font-size: 14px;
+    line-height: 30px;
+}
 </style>
