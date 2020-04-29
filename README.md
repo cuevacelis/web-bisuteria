@@ -14,10 +14,11 @@ Y este proceso puede llegar a tardar muchos segundos.
 
 ### Problemas con SEO
 Si el SEO es tu prioridad, una Single Page Application no debes usar.<br />
-Convartir este problema es la prioridad el "Server Rendering" y la mas actual "Generados de Sitios Estaticos" son dos muy buenas opcione que tenemos que usar.
+Combatir este problema es la prioridad el "Server Rendering" y la mas actual "Generados de Sitios Estaticos" son dos muy buenas opcione que tenemos que usar.
 
 ## Uso
-Usaremos NuxtJs que es un marco de código abierto de VueJS que hace que el desarrollo web sea simple y potente.
+Usaremos NuxtJs que es un marco de código abierto de VueJS que hace que el desarrollo web sea simple y potente.<br />
+Usando NodeJS tanto en Backend y Frontend
 
 ## Instalacion
 
