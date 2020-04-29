@@ -18,7 +18,7 @@ Combatir este problema es la prioridad el "Server Rendering" y la mas actual "Ge
 
 ## Uso
 Usaremos NuxtJs que es un marco de código abierto de VueJS que hace que el desarrollo web sea simple y potente.<br />
-Usando NodeJS tanto en Backend y Frontend
+NuxtJS hace uso de NodeJS tanto en Backend y Frontend
 
 ## Instalacion
 
