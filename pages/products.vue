@@ -8,11 +8,18 @@
         </p>
       </div>
     </section>
+    <div class="lista-productos">
+      <Aretes />
+    </div>
   </div>
 </template>
 
 <script>
+const Aretes = () => import('@/components/Aretes')
 export default {
+  components: {
+    Aretes
+  }
 }
 </script>
 
