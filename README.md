@@ -2,7 +2,7 @@
 
 > Proyecto de una Web de Bisuteria con VueJS y NuxtJS
 
-## Build Setup
+## Instalacion
 
 ```bash
 # Instala las Dependencias
