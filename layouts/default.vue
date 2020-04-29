@@ -2,7 +2,7 @@
   <div>
     <Header />
     <div class="contenido">
-      <fade-transition :duration="350">
+      <fade-transition :duration="250">
         <nuxt />
       </fade-transition>
     </div>
@@ -12,17 +12,13 @@
 
 <script>
 import { FadeTransition } from 'vue2-transitions'
-const Header = () => import('@/components/Header')
-const Footer = () => import('@/components/Footer')
+const Header = () => import('@/layouts/Header')
+const Footer = () => import('@/layouts/Footer')
 export default {
   components: {
     FadeTransition,
     Header,
     Footer
-  },
-  transition: {
-    name: 'test',
-    mode: 'out-in'
   }
 }
 </script>

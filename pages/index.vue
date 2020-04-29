@@ -14,7 +14,7 @@
       <swiper-slide class="slider slide-2">
         <div class="texto">
           <div class="title">
-            ELLA DIRA "SI"
+            ELLA DIRA "SÍ"
           </div>
           <div class="subtitle">
             ANILLO DE COMPROMISO
@@ -174,7 +174,7 @@ export default {
         .title {
           font-family: Novecentowide;
           color: #a5b0d6;
-          font-size: 2vh;
+          font-size: 3vh;
           font-weight: 200;
           letter-spacing: 2.5px;
           line-height: 28px;
