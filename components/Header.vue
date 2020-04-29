@@ -11,7 +11,7 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <nuxt-link class="nav-link" to="/products">
-              Joyas <span class="sr-only">(current)</span>
+              Productos <span class="sr-only">(current)</span>
             </nuxt-link>
           </li>
           <li class="nav-item">

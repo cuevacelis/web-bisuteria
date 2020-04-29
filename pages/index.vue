@@ -1,45 +1,33 @@
 <template>
   <div>
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active" />
-        <li data-target="#carouselExampleCaptions" data-slide-to="1" />
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="~/assets/images/0.jpg" class="d-block w-100 " alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="titulo">
-              HAZ TU VIDA MEJOR
-            </h3>
-            <h2 class="sub-titulo">
-              Diamantes Genuinos
-            </h2>
+    <swiper class="swiper" :options="swiperOption">
+      <swiper-slide class="slider slide-1">
+        <div class="texto">
+          <div class="title">
+            HAZ TU VIDA MEJOR
+          </div>
+          <div class="subtitle">
+            DIAMANTES GENUINOS
           </div>
         </div>
-        <div class="carousel-item">
-          <img src="~/assets/images/01.jpg" class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="titulo">
-              ELLA DIRA "SI"
-            </h3>
-            <h2 class="sub-titulo">
-              Anillo de Compromiso
-            </h2>
+      </swiper-slide>
+      <swiper-slide class="slider slide-2">
+        <div class="texto">
+          <div class="title">
+            ELLA DIRA "SI"
+          </div>
+          <div class="subtitle">
+            ANILLO DE COMPROMISO
           </div>
         </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true" />
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true" />
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+      </swiper-slide>
+      <swiper-slide class="slider slide-3" />
+      <div slot="pagination" class="swiper-pagination swiper-pagination-white" />
+      <div slot="button-prev" class="swiper-button-prev swiper-button-white" />
+      <div slot="button-next" class="swiper-button-next swiper-button-white" />
+    </swiper>
 
-    <div class="container marketing">
+    <div class="container marketing" style="margin-top:20px">
       <div class="row">
         <div class="col-lg-4">
           <img class="bd-placeholder-img rounded-circle" src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/48359486_1835382333257256_931420476259958784_n.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_eui2=AeF27zwo5vfWpQJu_rthCAieq2qHAa_thX-raocBr-2Ff8JybAXS8YsO_z-3N295us1YJ5ie-RuHweH1g0u0feoo&_nc_ohc=bBhQvrjxhCAAX8WD4b2&_nc_ht=scontent.ftru2-1.fna&oh=24ecbb949f339dea3e135308dfc62b65&oe=5ECB4247" width="140" height="140">
@@ -115,34 +103,100 @@
 </template>
 
 <script>
+import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+import 'swiper/css/swiper.css'
+
 export default {
+  name: 'SwiperExampleParallax',
+  title: 'Parallax',
+  components: {
+    Swiper,
+    SwiperSlide
+  },
+  data () {
+    return {
+      swiperOption: {
+        // autoHeight: true,
+        speed: 600,
+        effect: 'fade',
+        lazy: true,
+        autoplay: {
+          delay: 15500,
+          disableOnInteraction: false
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        }
+      }
+    }
+  }
 }
 </script>
 
-<style scoped>
-  .marketing{
-    margin-top:40px;
+<style lang="scss" scoped>
+  .slider{
+    left: 0;
+    top: 0;
+    vertical-align: text-top;
+    background-size: cover;
+    background-position: center;
   }
-  .carousel-caption {
-    bottom: 280px;
+  .slide-1 {
+    background-image: url('../assets/images/0.jpg');
+  }
+  .slide-2 {
+    background-image: url('../assets/images/01.jpg');
+  }
+  .slide-3 {
+    background-image: url('https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/11012544_681101178685383_7415841693488236579_n.png?_nc_cat=101&_nc_sid=19026a&_nc_eui2=AeFiJJ1-PO_i_4zv0GbsfLz_1Zv3zJRdR1zVm_fMlF1HXJ7rwIJfcVGTbbDmUVCCO4dN_IJQye0mzRK1e23jcdXx&_nc_ohc=kvRUjT2txqIAX_3LTiO&_nc_ht=scontent.ftru2-3.fna&oh=fa783536f33be69bdcfcc3b2a90b572c&oe=5ECCB4C4');
   }
 
-  .titulo{
-    color: #a5b0d6;
-    font-family: Novecentowide;
-    font-size: 24px;
-    font-weight: 200;
-    letter-spacing: 4.5px;
-    line-height: 28px;
-    padding: 80px 0 0;
-  }
+  .swiper {
+    width: 100%;
+    height:550px;
 
-  .sub-titulo{
-    font-family: Novecentowide;
-    color: #fff;
-    font-size: 48px;
-    line-height: 46px;
-    letter-spacing: 9px;
-    font-weight: 300;
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: $white;
+      box-sizing: border-box;
+      padding: 0 80px;
+      background-color: transparent;
+      .texto{
+        padding-top:40px;
+        .title {
+          font-family: Novecentowide;
+          color: #a5b0d6;
+          font-size: 2vh;
+          font-weight: 200;
+          letter-spacing: 2.5px;
+          line-height: 28px;
+          padding-bottom: 15px;
+        }
+
+        .subtitle {
+          font-family: Novecentowide;
+          color: #fff;
+          font-size: 5vh;
+          line-height: 46px;
+          letter-spacing: 9px;
+          font-weight: 300;
+          margin-bottom: $gap;
+        }
+
+        .text {
+          max-width: 430px;
+          line-height: 1.32;
+        }
+      }
+
+    }
   }
 </style>

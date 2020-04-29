@@ -2,7 +2,9 @@
   <div>
     <Header />
     <div class="contenido">
-      <nuxt />
+      <transition name="test" mode="out-in">
+        <nuxt />
+      </transition>
     </div>
     <Footer />
   </div>
@@ -15,6 +17,10 @@ export default {
   components: {
     Header,
     Footer
+  },
+  transition: {
+    name: 'test',
+    mode: 'out-in'
   }
 }
 </script>
