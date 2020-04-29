@@ -2,9 +2,9 @@
 
 > Proyecto de una Web de Bisuteria con NuxtJS incluyendo mejoras de SEO con SSR o Generador de Sitios Estaticos.
 
-## Motivacion
+## Motivación
 
-### El FrontEnd de Hoy 
+### El Frontend de Hoy 
 Las librerias, frameworks mas utilizados son [AngularJS](https://angular.io/), [ReactJS](https://reactjs.org/) y por ultimo y no menos importante [VueJS](https://vuejs.org/) <br />
 Las Single Page Applications son páginas web que **funcionarán extraordinariamente rápido**, incluso cuando navegamos entre diferentes páginas. <br />
 El problema es que todo este contenido estará disponible solo después de que los archivos de JavaScript terminen de cargar.
