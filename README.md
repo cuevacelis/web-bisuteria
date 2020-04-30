@@ -17,7 +17,7 @@ Si el SEO es tu prioridad, una Single Page Application no debes usar.<br />
 Combatir este problema es la prioridad el "Server Rendering" y el "Generados de Sitios Estaticos" son dos muy buenas opciones que puedes usar.
 
 ### ¿Necesito SEO en mis proyectos?
-Depende, si tu proyecto necesita ser facilmente raestreable por los buscadores, como por ejemplo un negocio que quieras promocionar; esntonces la respuesta es sí.<br />
+Depende, si tu proyecto necesita ser facilmente raestreable por los buscadores, como por ejemplo un negocio que quieras promocionar; entonces la respuesta es sí.<br />
 Si tu proyecto es la intranet de una empresa, pues no tiene sentido obtimizarla para SEO.
 
 ## Tecnologias
