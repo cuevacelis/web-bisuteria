@@ -14,17 +14,17 @@ Y este proceso puede llegar a tardar muchos segundos.
 
 ### Problemas con SEO
 Si el SEO es tu prioridad, una Single Page Application no debes usar.<br />
-Combatir este problema es la prioridad el "Server Rendering" y la mas actual "Generados de Sitios Estaticos" son dos muy buenas opcione que tenemos que usar.
+Combatir este problema es la prioridad el "Server Rendering" y el "Generados de Sitios Estaticos" son dos muy buenas opciones que puedes usar.
 
 ### ¿Necesito SEO en mis proyectos?
 Depende, si tu proyecto necesita ser facilmente raestreable por los buscadores, como por ejemplo un negocio que quieras promocionar; esntonces la respuesta es sí.<br />
 Si tu proyecto es la intranet de una empresa, pues no tiene sentido obtimizarla para SEO.
 
-## Uso
+## Tecnologias
 Usaremos NuxtJs que es un marco de código abierto de VueJS que hace que el desarrollo web sea simple y potente.<br />
 NuxtJS hace uso de NodeJS tanto en Backend y Frontend
 
-## Instalacion
+## Instalación
 
 ```bash
 # Instala las Dependencias
