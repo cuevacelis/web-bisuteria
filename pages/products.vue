@@ -16,9 +16,11 @@
 
 <script>
 const Aretes = () => import('@/components/Aretes')
+// const Lazy = () => import('@/components/lazy')
 export default {
   components: {
     Aretes
+    // Lazy
   }
 }
 </script>

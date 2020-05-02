@@ -1,11 +1,10 @@
-/* eslint-disable vue/require-v-for-key */
 <template>
   <div class="Aretes">
     <h3 class="titulo_seccion">
       Aretes
     </h3>
     <swiper class="swiper" :options="swiperOption">
-      <swiper-slide v-for="item in items" :key="item.id" :style="{ backgroundColor:'#882a2a' }">
+      <swiper-slide v-for="item in items" :key="item.id">
         {{ item.nombreImagen }}
         <img :src="item.urlImagen" style="width:100%">
       </swiper-slide>
