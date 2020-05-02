@@ -27,6 +27,8 @@ NuxtJS hace uso de NodeJS tanto en Backend y Frontend
 ## Instalación
 
 ```bash
+#Download
+$ git clone https://github.com/cuevacelis/web-bisuteria
 # Instala las Dependencias
 $ npm install
 
