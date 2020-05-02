@@ -5,6 +5,9 @@ export default {
   ** Encabezados de la página
   */
   head: {
+    htmlAttrs: {
+      lang: 'es'
+    },
     title: 'Jade Fashion',
     meta: [
       { charset: 'utf-8' },
