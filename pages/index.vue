@@ -27,7 +27,7 @@
       <div slot="button-next" class="swiper-button-next swiper-button-white" />
     </swiper>
 
-    <div class="container marketing" style="margin-top:20px">
+    <div class="container marketing" style="margin-top:26px">
       <div class="row">
         <div class="col-lg-4">
           <img
@@ -207,7 +207,7 @@ export default {
 
 .swiper {
   width: 100%;
-  height: 550px;
+  height: 570px;
 
   .swiper-slide {
     display: flex;
@@ -246,5 +246,9 @@ export default {
       }
     }
   }
+}
+.bd-placeholder-img{
+  margin: auto;
+  display: block;
 }
 </style>
