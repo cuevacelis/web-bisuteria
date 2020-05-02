@@ -9,6 +9,8 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'Description', content: 'Tienda Online de compra de Bisuteria y accesorios de moda con todo tipo de pulseras, collares, anillos y otras joyas' },
+      // { name: 'robots', content: 'index' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
