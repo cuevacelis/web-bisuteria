@@ -1,6 +1,6 @@
 # Web de Bisuteria
 
-Proyecto de una Web de Bisuteria con NuxtJS incluyendo mejoras de SEO con SSR o Generador de Sitios Estaticos.
+Proyecto de una Web de Bisuteria con NuxtJS incluyendo mejoras de SEO con "SSR" ó "Generador de Sitios Estaticos".
 
 ## Motivación
 
