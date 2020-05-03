@@ -13,13 +13,13 @@
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
-    "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/pwa": "^3.0.0-0",
+    "@nuxtjs/axios": "^5.10.3",
+    "@nuxtjs/dotenv": "^1.4.1",
+    "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@nuxtjs/style-resources": "1.0.0",
     "bootstrap": "4.4.1",
     "normalize.css": "8.0.1",
-    "nuxt": "2.0.0",
+    "nuxt": "2.12.2",
     "swiper": "5.3.8",
     "vue-awesome": "4.0.2",
     "vue-awesome-swiper": "4.1.1",
@@ -28,11 +28,11 @@
     "vueg": "1.4.5"
   },
   "devDependencies": {
-    "@nuxtjs/eslint-config": "2.0.0",
-    "@nuxtjs/eslint-module": "1.0.0",
-    "babel-eslint": "10.0.1",
-    "eslint": "6.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2",
+    "@nuxtjs/eslint-config": "2.0.2",
+    "@nuxtjs/eslint-module": "1.2.0",
+    "babel-eslint": "10.1.0",
+    "eslint": "6.8.0",
+    "eslint-plugin-nuxt": ">=0.5.2",
     "node-sass": "4.14.0",
     "sass-loader": "8.0.2",
     "vue-plugin-load-script": "1.2.0"
