@@ -3,7 +3,6 @@
     <div class="container">
       <div class="cols">
         <div class="row">
-
           <div class="col-md-4">
             <h3>PREGUNTAS FRECUENTES</h3>
             <ul>
@@ -16,12 +15,12 @@
           </div>
 
           <div class="col-md-4">
-             <h3>REDES SOCIALES</h3>
-              <ul class="social">
-               <li><a href="https://www.facebook.com/JadeFashion-681097335352434"><span class="ico ico-fb" />Facebook</a></li>
-               <li><a href="#"><span class="ico ico-tw" />Twitter</a></li>
-               <li><a href="#"><span class="ico ico-pi" />Pinterest</a></li>
-             </ul>
+            <h3>REDES SOCIALES</h3>
+            <ul class="social">
+              <li><a href="https://www.facebook.com/JadeFashion-681097335352434"><span class="ico ico-fb" />Facebook</a></li>
+              <li><a href="#"><span class="ico ico-tw" />Twitter</a></li>
+              <li><a href="#"><span class="ico ico-pi" />Pinterest</a></li>
+            </ul>
           </div>
 
           <div class="col-md-4">
@@ -32,7 +31,6 @@
               <p><span class="ico ico-ph" />(+51) 983 475 092</p>
             </div>
           </div>
-
         </div>
       </div>
     </div>

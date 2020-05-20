@@ -11,6 +11,11 @@
 
 <script>
 export default {
+  head () {
+    return {
+      title: 'JF AcercaDe'
+    }
+  }
 }
 </script>
 

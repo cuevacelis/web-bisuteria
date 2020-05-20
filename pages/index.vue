@@ -162,7 +162,6 @@ import 'swiper/css/swiper.css'
 
 export default {
   name: 'SwiperExampleParallax',
-  title: 'Parallax',
   components: {
     Swiper,
     SwiperSlide
@@ -170,10 +169,10 @@ export default {
   data () {
     return {
       swiperOption: {
-        // autoHeight: true,
         speed: 600,
         effect: 'fade',
         lazy: true,
+        loop: true,
         autoplay: {
           delay: 1500,
           disableOnInteraction: false
@@ -188,7 +187,8 @@ export default {
         }
       }
     }
-  }
+  },
+  title: 'Parallax'
 }
 </script>
 

@@ -12,22 +12,23 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'Description', content: 'Tienda Online de compra de Bisuteria y accesorios de moda con todo tipo de pulseras, collares, anillos y otras joyas' },
+      { hid: 'description', name: 'description', content: 'Tienda Online de compra de Bisuteria y accesorios de moda con todo tipo de pulseras, collares, anillos y otras joyas' }
       // { name: 'robots', content: 'index' },
-      { hid: 'description', name: 'description', content: '' }
+    ],
+    noscript: [
+      { innerHTML: 'Body No Scripts', body: true }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'https://code.jquery.com/jquery-3.4.1.slim.min.js' },
-      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js' }
     ]
   },
   /*
   ** Personaliza el color de la barra de progreso
   */
-  loading: { color: '#fff' },
+  // loading: { color: '#fff' },
+  loading: '~/components/componentes_de_control/LoadingPage.vue',
   /*
   ** CSS global
   */
