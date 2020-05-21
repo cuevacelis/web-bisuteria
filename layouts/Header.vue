@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="container navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
       <nuxt-link class="navbar-brand" to="/">
         <img src="@/assets/images/logo.png" alt="logo">
       </nuxt-link>
@@ -31,6 +31,8 @@
 </template>
 
 <script>
+export default {
+}
 </script>
 
 <style scoped>

@@ -26,6 +26,7 @@
     "vue-awesome": "4.0.2",
     "vue-awesome-swiper": "4.1.1",
     "vue-content-loading": "^1.6.0",
+    "vue-navigation-bar": "^2.0.0",
     "vue-notifications": "1.0.2",
     "vue2-transitions": "0.3.0",
     "vueg": "1.4.5"

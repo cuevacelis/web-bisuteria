@@ -24,6 +24,9 @@ export default {
 </script>
 
 <style>
+.contenido{
+  padding-top: 80px;
+}
 
 .button--green {
   display: inline-block;

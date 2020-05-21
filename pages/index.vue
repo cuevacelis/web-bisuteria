@@ -9,6 +9,11 @@
           <div class="subtitle">
             ANILLO DE COMPROMISO
           </div>
+          <nuxt-link to="/products">
+            <button type="button" class="btn btn-secondary">
+              Ver Anillo
+            </button>
+          </nuxt-link>
         </div>
       </swiper-slide>
       <swiper-slide class="slider slide-1">
@@ -19,9 +24,28 @@
           <div class="subtitle">
             DIAMANTES GENUINOS
           </div>
+          <nuxt-link to="/products">
+            <button type="button" class="btn btn-secondary">
+              Ver Joyas
+            </button>
+          </nuxt-link>
         </div>
       </swiper-slide>
-      <swiper-slide class="slider slide-3" />
+      <swiper-slide class="slider slide-3">
+        <div class="texto">
+          <div class="title">
+            JADE FASHION
+          </div>
+          <div class="subtitle">
+            MIRA TODOS LOS PRODUCTOS
+          </div>
+          <nuxt-link to="/products">
+            <button type="button" class="btn btn-secondary">
+              Ver Productos
+            </button>
+          </nuxt-link>
+        </div>
+      </swiper-slide>
       <div slot="button-prev" class="swiper-button-prev swiper-button-white" />
       <div slot="button-next" class="swiper-button-next swiper-button-white" />
     </swiper>
@@ -177,10 +201,6 @@ export default {
           delay: 1500,
           disableOnInteraction: false
         },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
@@ -207,7 +227,7 @@ export default {
   background-image: url('../assets/images/01.jpg');
 }
 .slide-3 {
-  background-image: url('https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/11012544_681101178685383_7415841693488236579_n.png?_nc_cat=101&_nc_sid=19026a&_nc_eui2=AeFiJJ1-PO_i_4zv0GbsfLz_1Zv3zJRdR1zVm_fMlF1HXJ7rwIJfcVGTbbDmUVCCO4dN_IJQye0mzRK1e23jcdXx&_nc_ohc=kvRUjT2txqIAX_3LTiO&_nc_ht=scontent.ftru2-3.fna&oh=fa783536f33be69bdcfcc3b2a90b572c&oe=5ECCB4C4');
+  background-image: url('https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/12924604_873954492733383_4881558672356992178_n.jpg?_nc_cat=105&_nc_sid=8bfeb9&_nc_eui2=AeHSWEeZxxzH2wYLyIGpUG2aZjFAI2btqpZmMUAjZu2qluNXb5KY7G8JOfVuI_P2WsOakuhVBvYKXFVmOcf1tvUD&_nc_ohc=yaAj9CSHUgoAX8uxLLQ&_nc_ht=scontent.ftru2-1.fna&oh=8f81ac733c9d1a350d225679fe5511e3&oe=5EEB5A2B');
 }
 
 .swiper {
