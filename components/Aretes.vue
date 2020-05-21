@@ -1,18 +1,18 @@
 <template>
   <section class="Aretes">
     <vcl-facebook v-if="!myDataAretes" :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
-    <div v-else class="contenido__aretes">
-      <h2 class="titulo__aretes">
+    <div v-else class="contenido__slider">
+      <h2 class="titulo__slider">
         Aretes
       </h2>
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide v-for="item in items" :key="item.id">
-          <a href="">
-            <img :src="item.urlImagen" class="img__aretes">
-            <p class="texto__aretes">
+          <nuxt-link to="">
+            <img :src="item.urlImagen" class="imagen__slider">
+            <p class="texto__slider">
               {{ item.nombreImagen }}
             </p>
-          </a>
+          </nuxt-link>
         </swiper-slide>
         <div slot="button-prev" class="swiper-button-prev" />
         <div slot="button-next" class="swiper-button-next" />
@@ -45,7 +45,7 @@ export default {
         { nombreImagen: 'Arete7', urlImagen: 'https://scontent.ftru2-2.fna.fbcdn.net/v/t1.0-9/89355466_2672136796248468_5518171619668787200_n.jpg?_nc_cat=107&_nc_sid=8bfeb9&_nc_eui2=AeGYnEEV0uWR_3F77aipMHJYNtYLrIt9ql021gusi32qXZ8049pynrNi1oc01QEMNaYT_veSbRvIlOIK4J_o4iIo&_nc_ohc=V-ZXJyacr7IAX_fOijZ&_nc_ht=scontent.ftru2-2.fna&oh=dbfb4c558c0417c63330feeb0982145e&oe=5EEA4087' }
       ],
       swiperOption: {
-        slidesPerView: 5,
+        slidesPerView: 4,
         spaceBetween: 5,
         lazy: true,
         loop: true,
@@ -64,17 +64,16 @@ export default {
 
 <style>
 .Aretes{
-  text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 25px;
+  margin-right: 25px;
   margin-bottom: 25px;
   margin-top: 25px;
 }
-.img__aretes{
+.imagen__slider{
   width: 100%;
   max-height: 320px;
 }
-.texto__aretes{
+.texto__slider{
   color: black;
   font-size: inherit;
   line-height: 18px;
