@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <swiper class="swiper" :options="swiperOption">
+  <div class="main">
+    <swiper class="slider swiper" :options="swiperOption">
       <swiper-slide class="slider slide-2">
         <div class="texto">
           <div class="title">
@@ -50,7 +50,7 @@
       <div slot="button-next" class="swiper-button-next swiper-button-white" />
     </swiper>
 
-    <div class="container marketing" style="margin-top:26px">
+    <div class="contenido container marketing" style="margin-top:26px">
       <div class="row">
         <div class="col-lg-4">
           <img
@@ -117,7 +117,7 @@
         <div class="col-md-5">
           <img
             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/89920171_2672160692912745_4511410785607483392_n.jpg?_nc_cat=102&_nc_sid=8bfeb9&_nc_eui2=AeF259Oku1ya7WKj7x3a7-3tz7Oxr6D9D4TPs7GvoP0PhE3fKO2cMOTWsHSiwYenCVPgjss2nYYYezfMBdjLq2Km&_nc_ohc=kc_CfNqJK7MAX9SI788&_nc_ht=scontent.ftru2-1.fna&oh=aae584430e3135980f1b064422fd03a3&oe=5ECBEF13"
+            src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/79262808_2453105371484946_4372149791044403200_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeHf3RdcEX0aqp9227PA1klcAICL7kKYsLkAgIvuQpiwud9jw8CdgmM7ApuiwqgcRoRAhawM_2oFlNm3BmJzkDAH&_nc_ohc=AVfiD-kM0xEAX_GwiNK&_nc_ht=scontent.ftru2-3.fna&oh=f3cb531a5b0523d18fa961ae3eb5d52e&oe=5EEB794C"
             width="500"
             height="500"
             alt="corazon con candadito romantico"
@@ -142,7 +142,7 @@
         <div class="col-md-5 order-md-1">
           <img
             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/89238431_2672136692915145_5270236991760367616_n.jpg?_nc_cat=108&_nc_sid=8bfeb9&_nc_eui2=AeGxPhNYpmFHwg4jc6ELXGHlNA_RlZ7J1WM0D9GVnsnVY2vIq9fqM5hLUQusKbBK_tNVDRjrUMJEnA_Wc-Ag8Mbx&_nc_ohc=qMaZ8WswuBIAX9OwAXp&_nc_ht=scontent.ftru2-3.fna&oh=87d1b6d0d8a4019f9b256c989bebf34a&oe=5ECBFDD6"
+            src="https://scontent.ftru2-2.fna.fbcdn.net/v/t1.0-9/75587542_2431602130301937_6748122495146000384_n.jpg?_nc_cat=103&_nc_sid=8bfeb9&_nc_eui2=AeEnxXSmD4-YU6dq6AHmlq9yi5-cd2JOF7KLn5x3Yk4XsqISUZSa6GE3BNadE55Q-j1BbIlpFo1X_S2WVwmV_x8D&_nc_ohc=FdKLJDiizzcAX-QAZMa&_nc_ht=scontent.ftru2-2.fna&oh=d9c9c5ace193172f5de5afa21cfaf964&oe=5EEDDBC2"
             width="500"
             height="500"
             alt="aretes de perla"
@@ -167,7 +167,7 @@
         <div class="col-md-5">
           <img
             class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/p720x720/72849107_2363049217157229_5437505124463280128_o.jpg?_nc_cat=108&_nc_sid=8bfeb9&_nc_eui2=AeFSdiT5LErMTVxMiKSYk7x83jftGDs0M1feN-0YOzQzV3JXzUUJ_qDOZITQ0PsMspfhJqZlsnK4bRRrbROvFr_A&_nc_ohc=R9iCw3z3hWcAX8W5vVh&_nc_ht=scontent.ftru2-3.fna&_nc_tp=6&oh=f7d419e77538ec11af78632f963a172c&oe=5ECC31E6"
+            src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/26239627_1433138140148346_7865976743288717172_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFg2sGMa-8C7F2qxAhSGuF32ToMeSSS7rDZOgx5JJLusN9mp8P7HrMskKh2ElKohN41avA2Zyfv71XBd9HvOAiu&_nc_ohc=-RkjwwWrCZ4AX9dd4Id&_nc_ht=scontent.ftru2-1.fna&oh=58d949a652be3d4345f2197a9d2e99f2&oe=5EEA920A"
             width="500"
             height="500"
             alt="accesorios para el cabello"
