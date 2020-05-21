@@ -45,8 +45,28 @@ export default {
         { nombreImagen: 'Arete7', urlImagen: 'https://scontent.ftru2-2.fna.fbcdn.net/v/t1.0-9/89355466_2672136796248468_5518171619668787200_n.jpg?_nc_cat=107&_nc_sid=8bfeb9&_nc_eui2=AeGYnEEV0uWR_3F77aipMHJYNtYLrIt9ql021gusi32qXZ8049pynrNi1oc01QEMNaYT_veSbRvIlOIK4J_o4iIo&_nc_ohc=V-ZXJyacr7IAX_fOijZ&_nc_ht=scontent.ftru2-2.fna&oh=dbfb4c558c0417c63330feeb0982145e&oe=5EEA4087' }
       ],
       swiperOption: {
-        slidesPerView: 4,
-        spaceBetween: 5,
+        breakpoints: {
+          200: {
+            slidesPerView: 2,
+            spaceBetween: 10
+          },
+          400: {
+            slidesPerView: 3,
+            spaceBetween: 10
+          },
+          600: {
+            slidesPerView: 4,
+            spaceBetween: 5
+          },
+          1120: {
+            slidesPerView: 5,
+            spaceBetween: 5
+          },
+          1300: {
+            slidesPerView: 6,
+            spaceBetween: 5
+          }
+        },
         lazy: true,
         loop: true,
         navigation: {
@@ -71,7 +91,7 @@ export default {
 }
 .imagen__slider{
   width: 100%;
-  max-height: 320px;
+  max-height: 280px;
 }
 .texto__slider{
   color: black;
