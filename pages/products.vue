@@ -17,8 +17,8 @@
         <Headpiece />
         <Maquillaje />
         <Mascarillas />
-        <Perlas />-->
-        <Relojes />
+        <Perlas />
+        <Relojes />-->
       </section>
     </section>
   </div>
@@ -33,11 +33,11 @@ const Headpiece = () => import('@/components/Headpiece')
 const Maquillaje = () => import('@/components/Maquillaje')
 const Mascarillas = () => import('@/components/Mascarillas')
 const Perlas = () => import('@/components/Perlas') */
-const Relojes = () => import('@/components/Relojes')
+// const Relojes = () => import('@/components/Relojes')
 
 export default {
   components: {
-    Aretes,
+    Aretes
     /* SanValentin,
     Brazaletes,
     Collares,
@@ -45,7 +45,7 @@ export default {
     Maquillaje,
     Mascarillas,
     Perlas, */
-    Relojes
+    // Relojes
   },
   data () {
     return {

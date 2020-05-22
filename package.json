@@ -33,11 +33,15 @@
     "vueg": "1.4.5"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.0.1",
     "@nuxtjs/eslint-config": "3.0.0",
     "@nuxtjs/eslint-module": "2.0.0",
     "babel-eslint": "10.1.0",
     "eslint": "7.0.0",
     "eslint-plugin-nuxt": ">=1.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "imagemin-svgo": "^7.1.0",
     "node-sass": "4.14.1",
     "sass-loader": "8.0.2",
     "vue-plugin-load-script": "1.2.0"

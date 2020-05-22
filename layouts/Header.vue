@@ -2,7 +2,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
       <nuxt-link class="navbar-brand" to="/">
-        <img src="@/assets/images/logo.png" alt="logo">
+        <img :src="require('~/assets/images/logo.png')" alt="logo">
       </nuxt-link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
         <span class="navbar-toggler-icon" />

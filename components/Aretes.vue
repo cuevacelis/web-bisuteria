@@ -9,14 +9,15 @@
         <swiper-slide v-for="item in items" :key="item.id">
           <nuxt-link to="">
             <img :data-src="item.urlImagen" class="swiper-lazy imagen__slider">
-            <div class="swiper-lazy-preloader" />
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-black" />
             <p class="texto__slider">
               {{ item.nombreImagen }}
             </p>
           </nuxt-link>
         </swiper-slide>
-        <div slot="button-prev" class="swiper-button-prev" />
-        <div slot="button-next" class="swiper-button-next" />
+        <div slot="pagination" class="swiper-pagination" />
+        <div slot="button-prev" class="swiper-button-prev swiper-button-white" />
+        <div slot="button-next" class="swiper-button-next swiper-button-white" />
       </swiper>
     </div>
   </section>
@@ -25,7 +26,6 @@
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import { VclFacebook } from 'vue-content-loading'
-import 'swiper/css/swiper.css'
 
 export default {
   components: {
@@ -46,6 +46,8 @@ export default {
         { nombreImagen: 'Arete7', urlImagen: 'https://scontent.ftru2-2.fna.fbcdn.net/v/t1.0-9/89355466_2672136796248468_5518171619668787200_n.jpg?_nc_cat=107&_nc_sid=8bfeb9&_nc_eui2=AeGYnEEV0uWR_3F77aipMHJYNtYLrIt9ql021gusi32qXZ8049pynrNi1oc01QEMNaYT_veSbRvIlOIK4J_o4iIo&_nc_ohc=V-ZXJyacr7IAX_fOijZ&_nc_ht=scontent.ftru2-2.fna&oh=dbfb4c558c0417c63330feeb0982145e&oe=5EEA4087' }
       ],
       swiperOption: {
+        lazy: true,
+        loop: true,
         breakpoints: {
           200: {
             slidesPerView: 2,
@@ -57,22 +59,22 @@ export default {
           },
           600: {
             slidesPerView: 4,
-            spaceBetween: 5
+            spaceBetween: 10
           },
           1120: {
             slidesPerView: 5,
-            spaceBetween: 5
+            spaceBetween: 10
           },
           1300: {
             slidesPerView: 6,
-            spaceBetween: 5
+            spaceBetween: 10
           }
         },
-        preloadImages: false,
-        lazy: {
-          loadPrevNext: true
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'progressbar'
         },
-        loop: true,
+
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
