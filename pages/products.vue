@@ -53,7 +53,7 @@ export default {
   },
   head () {
     return {
-      title: 'JF Productos'
+      title: 'Productos - Jade Fashion'
     }
   }
 }

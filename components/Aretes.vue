@@ -8,7 +8,8 @@
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide v-for="item in items" :key="item.id">
           <nuxt-link to="">
-            <img :src="item.urlImagen" class="imagen__slider">
+            <img :data-src="item.urlImagen" class="swiper-lazy imagen__slider">
+            <div class="swiper-lazy-preloader" />
             <p class="texto__slider">
               {{ item.nombreImagen }}
             </p>
@@ -67,7 +68,10 @@ export default {
             spaceBetween: 5
           }
         },
-        lazy: true,
+        preloadImages: false,
+        lazy: {
+          loadPrevNext: true
+        },
         loop: true,
         navigation: {
           nextEl: '.swiper-button-next',

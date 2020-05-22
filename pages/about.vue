@@ -13,7 +13,7 @@
 export default {
   head () {
     return {
-      title: 'JF AcercaDe'
+      title: 'AcercaDe - Jade Fashion'
     }
   }
 }
