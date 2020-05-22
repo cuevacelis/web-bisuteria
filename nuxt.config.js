@@ -31,6 +31,11 @@ export default {
   */
   // loading: { color: '#fff' },
   loading: '~/components/componentes_de_control/LoadingPage.vue',
+  loadingIndicator: {
+    name: 'rotating-plane',
+    color: '#3B8070',
+    background: 'white'
+  },
   /*
   ** CSS global
   */
@@ -79,6 +84,11 @@ export default {
   /*
   ** Configuración de compilación
   */
+  server: {
+    port: 3000, // default: 3000
+    host: '0.0.0.0', // default: localhost,
+    timing: false
+  },
   build: {
     /*
     ** Puede ampliar la configuración del Webpack aquí

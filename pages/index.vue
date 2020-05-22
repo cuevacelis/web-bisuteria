@@ -1,21 +1,6 @@
 <template>
   <div class="main">
     <swiper class="slider swiper" :options="swiperOption">
-      <swiper-slide class="slider slide-2">
-        <div class="texto">
-          <div class="title">
-            ELLA DIRA "SÍ"
-          </div>
-          <div class="subtitle">
-            ANILLO DE COMPROMISO
-          </div>
-          <nuxt-link to="/products">
-            <button type="button" class="btn btn-secondary">
-              VER ANILLOS
-            </button>
-          </nuxt-link>
-        </div>
-      </swiper-slide>
       <swiper-slide class="slider slide-1">
         <div class="texto">
           <div class="title">
@@ -27,6 +12,21 @@
           <nuxt-link to="/products">
             <button type="button" class="btn btn-secondary">
               VER JOYAS
+            </button>
+          </nuxt-link>
+        </div>
+      </swiper-slide>
+      <swiper-slide class="slider slide-2">
+        <div class="texto">
+          <div class="title">
+            ELLA DIRA "SÍ"
+          </div>
+          <div class="subtitle">
+            ANILLO DE COMPROMISO
+          </div>
+          <nuxt-link to="/products">
+            <button type="button" class="btn btn-secondary">
+              VER ANILLOS
             </button>
           </nuxt-link>
         </div>
@@ -191,7 +191,7 @@ import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 
 export default {
-  name: 'SwiperExampleParallax',
+  name: 'SwiperPaginaPrincipal',
   components: {
     Swiper,
     SwiperSlide
@@ -200,16 +200,24 @@ export default {
     return {
       swiperOption: {
         speed: 600,
+        grabCursor: true,
         effect: 'fade',
-        lazy: true,
-        loop: true,
         autoplay: {
-          delay: 1500,
+          delay: 1600,
           disableOnInteraction: false
+        },
+        loop: true,
+        preloadImages: false,
+        lazy: {
+          loadPrevNext: true
         },
         navigation: {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev'
+        },
+        a11y: {
+          prevSlideMessage: 'Anterior Diapositiva',
+          nextSlideMessage: 'Siguiente Diapositiva'
         }
       }
     }

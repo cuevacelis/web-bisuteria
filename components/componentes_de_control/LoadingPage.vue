@@ -1,4 +1,4 @@
-<template>
+<template lang="html">
   <div v-if="loading" class="loading-page">
     <div class="loader">
       Cargando...
@@ -17,6 +17,10 @@ export default {
     },
     finish () {
       this.loading = false
+    },
+    fail () {
+      this.loading = false
+      alert('Un error :(')
     }
   }
 }
@@ -37,7 +41,7 @@ export default {
   font-family: sans-serif;
 }
 
-$color-loader: #ce4233;
+$color-loader: #2b2524;
 
 .loader {
   width: 250px;
