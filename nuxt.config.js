@@ -50,18 +50,15 @@ export default {
   */
   plugins: [
     // '~plugins/scriptsPlantilla',
-    { src: '@/plugins/vue-awesome-swiper', mode: 'client' }
+    { src: '@/plugins/vue-awesome-swiper', mode: 'client' },
+    { src: '@/plugins/vue-progressive-image', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/eslint-module',
-    '@aceforth/nuxt-optimized-images'
+    '@nuxtjs/eslint-module'
   ],
-  optimizedImages: {
-    optimizeImages: true
-  },
   /*
   ** Nuxt.js modules
   */
@@ -69,6 +66,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/style-resources',
     '@nuxtjs/axios',
+    '@nuxt/http',
     // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv'
@@ -84,6 +82,9 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+  },
+  http: {
+    // proxyHeaders: false
   },
   /*
   ** Configuración de compilación

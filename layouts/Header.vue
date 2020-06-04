@@ -10,7 +10,7 @@
       <div id="navbarNav" class="collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/products">
+            <nuxt-link class="nav-link" to="/productos">
               Productos <span class="sr-only">(current)</span>
             </nuxt-link>
           </li>

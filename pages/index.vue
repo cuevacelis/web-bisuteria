@@ -190,7 +190,7 @@
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 
 export default {
-  name: 'SwiperPaginaPrincipal',
+  name: 'PaginaPrincipal',
   components: {
     Swiper,
     SwiperSlide
