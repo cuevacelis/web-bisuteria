@@ -1,4 +1,5 @@
-
+// eslint-disable-next-line nuxt/no-cjs-in-config
+const fetch = require('node-fetch')
 export default {
   mode: 'universal',
   /*
@@ -93,6 +94,14 @@ export default {
     port: 3000, // default: 3000
     host: '0.0.0.0', // default: localhost,
     timing: false
+  },
+  generate: {
+    async routes () {
+      const productos = await fetch('/data/' + 'aretes' + '.json').then(res => res.json())
+      const routes = productos.map(productos => `/productos/${productos.Categoria}`)
+
+      return ['/'].concat(routes)
+    }
   },
   build: {
     /*

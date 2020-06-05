@@ -1,24 +1,24 @@
 <template>
-  <section :class="items.Tipo">
+  <section :class="productos.Tipo">
     <vcl-facebook v-if="$fetchState.pending" :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
     <p v-else-if="$fetchState.error">
       Error al Obtener Datos: {{ $fetchState.error.message }}
     </p>
     <div v-else class="contenido__slider">
-      <nuxt-link :to="'/productos/'+items.Categoria">
+      <nuxt-link :to="'/productos/'+productos.Categoria">
         <h2 class="titulo__slider">
-          {{ items.Categoria }}
+          {{ productos.Categoria }}
         </h2>
       </nuxt-link>
       <swiper class="swiper" :options="swiperOption">
-        <swiper-slide v-for="item in items.Articulos" :key="item.id">
-          <nuxt-link :to="'/productos/'+ items.Categoria + '/' + item.nombreProducto">
+        <swiper-slide v-for="producto in productos.Articulos" :key="producto.id">
+          <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
             <figure class="figure__slider">
-              <img :data-src="item.urlImagen" class="swiper-lazy imagen__slider">
+              <img :data-src="producto.urlImagen" class="swiper-lazy imagen__slider">
               <div class="swiper-lazy-preloader swiper-lazy-preloader-black imagen__preload" />
             </figure>
             <p class="texto__slider">
-              {{ item.nombreProducto }}
+              {{ producto.nombreProducto }}
             </p>
           </nuxt-link>
         </swiper-slide>
@@ -48,11 +48,11 @@ export default {
   },
 
   async fetch () {
-    this.items = await this.$http.$get(location.origin + '/data/' + this.tipo + '.json')
+    this.productos = await this.$http.$get('/data/' + this.tipo + '.json')
   },
   data () {
     return {
-      items: [],
+      productos: [],
       swiperOption: {
         lazy: true,
         loop: true,
@@ -92,11 +92,6 @@ export default {
           prevEl: '.swiper-button-prev'
         }
       }
-    }
-  },
-  activated () {
-    if (this.$fetchState.timestamp <= (Date.now() - 30000)) {
-      this.$fetch()
     }
   }
 }

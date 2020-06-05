@@ -32,17 +32,19 @@
 <script>
 import axios from 'axios'
 export default {
-  name: 'PaginaDeProductosDeCiertaCategoria',
-  async asyncData ({ params, error }) {
-    try {
-      const { data } = await axios.get(location.origin + '/data/' + params.Categoria + '.json')
-      return { productos: data }
-    } catch (e) {
-      error({ message: 'Producto no encontrado', statusCode: 404 })
-    }
+  name: 'TodosProductosDeUnaCategoria',
+  asyncData ({ params, error }) {
+    return axios.get('/data/' + params.categorias + '.json')
+      .then((res) => {
+        return { productos: res.data }
+      })
+      .catch((e) => {
+        error({ message: 'Producto no encontrado', statusCode: 404 })
+      })
   },
   data () {
     return {
+      categoria: this.$route.params.categorias
     }
   },
   head () {
