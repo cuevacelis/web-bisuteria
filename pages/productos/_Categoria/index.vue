@@ -1,28 +1,31 @@
 <template>
   <section>
-      <h3>
-        {{ productos.Categoria }}
-      </h3>
-      <ul :class=" productos.Categoria">
-        <div class="album py-5 bg-light">
-          <div class="container">
-            <div class="col-md-4">
-              <div class="card mb-4 box-shadow row" v-for="producto in productos.Articulos" :key="producto.id">
-                  <img src="producto.urlImagen" class="card-img-top" style="height: 225px; width: 100%; display: block;">
-                  <div class="card-body">
-                    <p class="card-text">{{ producto.nombreProducto }}</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary">Reservar</button>
-                      </div>
-                    </div>
+    <h3 class="titulo">
+      {{ productos.Categoria }}
+    </h3>
+    <ul :class="productos.Categoria">
+      <div class="album py-5">
+        <div class="container">
+          <div class="col-md-4">
+            <div v-for="producto in productos.Articulos" :key="producto.id" class="card mb-4 box-shadow row">
+              <img :src="producto.urlImagen" class="card-img-top" style="width: 100%; display: block;">
+              <div class="card-body">
+                <p class="card-text">
+                  {{ producto.nombreProducto }}
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">
+                      Comprar
+                    </button>
                   </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </ul>
+      </div>
+    </ul>
   </section>
 </template>
 
@@ -32,7 +35,7 @@ export default {
   name: 'PaginaDeProductosDeCiertaCategoria',
   async asyncData ({ params, error }) {
     try {
-      const { data } = await axios.get('http://localhost:3000/data/' + params.Categoria + '.json')
+      const { data } = await axios.get(location.origin + '/data/' + params.Categoria + '.json')
       return { productos: data }
     } catch (e) {
       error({ message: 'Producto no encontrado', statusCode: 404 })
@@ -51,4 +54,13 @@ export default {
 </script>
 
 <style>
+.titulo{
+  align-items: center;
+}
+.card{
+  border:3px solid rgba(0,0,0,.125);
+}
+.card-text{
+  font-size: 25px;
+}
 </style>

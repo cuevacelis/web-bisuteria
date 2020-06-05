@@ -48,7 +48,7 @@ export default {
   },
 
   async fetch () {
-    this.items = await this.$http.$get('http://localhost:3000/data/' + this.tipo + '.json')
+    this.items = await this.$http.$get(location.origin + '/data/' + this.tipo + '.json')
   },
   data () {
     return {
