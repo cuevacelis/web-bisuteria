@@ -95,14 +95,17 @@ export default {
     host: '0.0.0.0', // default: localhost,
     timing: false
   },
-  /* generate: {
-    async routes () {
+  generate: {
+    /* async routes () {
       const productos = await fetch('/data/' + 'aretes' + '.json').then(res => res.json())
       const routes = productos.map(productos => `/productos/${productos.Categoria}`)
 
       return ['/'].concat(routes)
-    }
-  }, */
+    } */
+    routes: [
+      'productos/Aretes'
+    ]
+  },
   build: {
     /*
     ** Puede ampliar la configuración del Webpack aquí
