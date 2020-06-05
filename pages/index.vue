@@ -64,8 +64,8 @@
             Collares
           </h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p>
-            <a class="btn btn-secondary" href="#" role="button">View details »</a>
+          <p style="text-align: center;">
+            <a class="btn btn-secondary" href="#" role="button">Ver detalles »</a>
           </p>
         </div>
         <!-- /.col-lg-4 -->
@@ -81,8 +81,8 @@
             Maquillaje
           </h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p>
-            <a class="btn btn-secondary" href="#" role="button">View details »</a>
+          <p style="text-align: center;">
+            <a class="btn btn-secondary" href="#" role="button">Ver detalles »</a>
           </p>
         </div>
         <!-- /.col-lg-4 -->
@@ -98,8 +98,8 @@
             San Valentin♥
           </h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p>
-            <a class="btn btn-secondary" href="#" role="button">View details »</a>
+          <p style="text-align: center;">
+            <a class="btn btn-secondary" href="#" role="button">Ver detalles »</a>
           </p>
         </div>
         <!-- /.col-lg-4 -->
@@ -134,7 +134,7 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
-        <div class="col-md-7 order-md-2">
+        <div class="col-md-7 order-md-2" style="margin-top: 10%;">
           <h2 class="featurette-heading">
             Oh yeah, it’s that good.
             <span class="text-muted">See for yourself.</span>
