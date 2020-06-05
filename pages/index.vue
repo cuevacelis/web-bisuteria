@@ -9,7 +9,7 @@
           <div class="subtitle">
             JOYAS GENUINAS
           </div>
-          <nuxt-link to="/products">
+          <nuxt-link to="/productos">
             <button type="button" class="btn btn-secondary">
               VER JOYAS
             </button>
@@ -24,7 +24,7 @@
           <div class="subtitle">
             ANILLO DE COMPROMISO
           </div>
-          <nuxt-link to="/products">
+          <nuxt-link to="/productos">
             <button type="button" class="btn btn-secondary">
               VER ANILLOS
             </button>
@@ -39,7 +39,7 @@
           <div class="subtitle">
             COLLAR VIRGEN DE LA PUERTA
           </div>
-          <nuxt-link to="/products">
+          <nuxt-link to="/productos">
             <button type="button" class="btn btn-secondary">
               VER COLLARES
             </button>

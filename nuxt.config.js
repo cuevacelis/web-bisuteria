@@ -1,7 +1,8 @@
 // eslint-disable-next-line nuxt/no-cjs-in-config
 // const fetch = require('node-fetch')
 export default {
-  mode: 'universal',
+  mode: 'universal', // Mejora el SEO
+  // mode: 'spa', // No mejora el SEO
   /*
   ** Encabezados de la página
   */
@@ -67,10 +68,15 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/style-resources',
     // '@nuxtjs/axios',
-    '@nuxt/http'
+    '@nuxt/http',
+    ['@nuxtjs/component-cache', {
+      max: 10000,
+      maxAge: 1000 * 60 * 60
+    }]
     // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     // '@nuxtjs/dotenv'
+
   ],
   // PWA
   /* pwa: {
@@ -104,7 +110,10 @@ export default {
     } */
     routes: [
       'productos/Aretes/',
-      'productos/Relojes/'
+      'productos/Relojes/',
+      'productos/Collares/',
+      'productos/Maquillaje/',
+      'productos/SanValentin/'
     ]
   },
   build: {

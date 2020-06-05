@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom box-shadow">
       <nuxt-link class="navbar-brand" to="/">
         <img
-          src="/images/logo1.png"
+          src="/images/logo1-min.png"
           width="60"
           height="60"
           alt="logo"
