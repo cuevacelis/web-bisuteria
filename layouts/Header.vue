@@ -1,8 +1,15 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light border-bottom box-shadow">
       <nuxt-link class="navbar-brand" to="/">
-        <img src="/images/logo.png" alt="logo">
+        <img
+          src="/images/logo1.png"
+          width="60"
+          height="60"
+          alt="logo"
+          loading="lazy"
+        >
+        JadeFashion
       </nuxt-link>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav">
         <span class="navbar-toggler-icon" />
@@ -15,7 +22,7 @@
             </nuxt-link>
           </li>
           <li class="nav-item">
-            <nuxt-link class="nav-link" to="/cart">
+            <nuxt-link class="nav-link" to="/promociones">
               Promociones
             </nuxt-link>
           </li>
@@ -36,4 +43,11 @@ export default {
 </script>
 
 <style scoped>
+.box-shadow {
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .05);
+}
+.navbar{
+  padding-bottom: 0;
+  padding-top: 0;
+}
 </style>

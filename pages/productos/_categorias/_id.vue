@@ -1,8 +1,12 @@
 <template>
   <section>
-    <div class="container">
+    <vcl-instagram v-if="$fetchState.pending" :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
+    <p v-else-if="$fetchState.error">
+      Error al Obtener Datos: {{ $fetchState.error.message }}
+    </p>
+    <div v-else class="container">
       <div v-for="producto in productos.Articulos" :key="producto.id">
-        <div v-if="producto.id == params.id">
+        <div v-if="producto.id == id">
           <img :src="producto.urlImagen" class="card-img-top" style="width: 100%; display: block;">
           <div>
             {{ producto.nombreProducto }}
@@ -14,20 +18,21 @@
 </template>
 
 <script>
-import axios from 'axios'
+import { VclInstagram } from 'vue-content-loading'
+
 export default {
   name: 'PageDeUnProductoEnEspecifico',
-  asyncData ({ params, error }) {
-    return axios.get('/data/' + params.categorias /* +'params.id' */+ '.json')
-      .then((res) => {
-        return { productos: res.data, params }
-      })
-      .catch((e) => {
-        error({ message: 'Producto no encontrado', statusCode: 404 })
-      })
+  components: {
+    VclInstagram
+  },
+  async fetch () {
+    this.productos = await this.$http.$get('/data/' + this.$route.params.categorias + '.json')
+    this.id = this.$route.params.id
   },
   data () {
     return {
+      productos: [],
+      id: []
     }
   },
   head () {

@@ -1,33 +1,40 @@
 <template>
-  <section :class="productos.Tipo">
-    <vcl-facebook v-if="$fetchState.pending" :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
-    <p v-else-if="$fetchState.error">
-      Error al Obtener Datos: {{ $fetchState.error.message }}
-    </p>
-    <div v-else class="contenido__slider">
-      <nuxt-link :to="'/productos/'+productos.Categoria">
-        <h2 class="titulo__slider">
-          {{ productos.Categoria }}
-        </h2>
-      </nuxt-link>
-      <swiper class="swiper" :options="swiperOption">
-        <swiper-slide v-for="producto in productos.Articulos" :key="producto.id">
-          <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
-            <figure class="figure__slider">
-              <img :data-src="producto.urlImagen" class="swiper-lazy imagen__slider">
-              <div class="swiper-lazy-preloader swiper-lazy-preloader-black imagen__preload" />
-            </figure>
-            <p class="texto__slider">
-              {{ producto.nombreProducto }}
-            </p>
-          </nuxt-link>
-        </swiper-slide>
-        <div slot="pagination" class="swiper-pagination" />
-        <div slot="button-prev" class="swiper-button-prev swiper-button-white" />
-        <div slot="button-next" class="swiper-button-next swiper-button-white" />
-      </swiper>
-    </div>
-  </section>
+  <div>
+    <section v-if="$fetchState.pending" class="Cargando_Datos">
+      <vcl-facebook :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
+    </section>
+    <section v-else-if="$fetchState.error" class="Error_Carga_:(">
+      <p>
+        Error al Obtener Datos: {{ $fetchState.error.message }}
+      </p>
+    </section>
+    <section v-else :class="productos.Tipo">
+      <div class="contenido__slider">
+        <nuxt-link :to="'/productos/'+productos.Categoria">
+          <h2 class="titulo__slider">
+            {{ productos.Categoria }}
+          </h2>
+        </nuxt-link>
+        <swiper class="swiper" :options="swiperOption">
+          <swiper-slide v-for="producto in productos.Articulos" :key="producto.id">
+            <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
+              <figure class="figure__slider">
+                <img :data-src="producto.urlImagen" class="swiper-lazy imagen__slider">
+                <div class="swiper-lazy-preloader swiper-lazy-preloader-black imagen__preload" />
+              </figure>
+              <p class="texto__slider">
+                {{ producto.nombreProducto }}
+              </p>
+            </nuxt-link>
+          </swiper-slide>
+          <div slot="pagination" class="swiper-pagination" />
+          <div slot="button-prev" class="swiper-button-prev swiper-button-white" />
+          <div slot="button-next" class="swiper-button-next swiper-button-white" />
+        </swiper>
+      </div>
+    </section>
+    <div />
+  </div>
 </template>
 
 <script>
@@ -98,6 +105,9 @@ export default {
 </script>
 
 <style>
+.Cargando_Datos{
+  margin: 25px;
+}
 .Producto{
   margin-left: 25px;
   margin-right: 25px;

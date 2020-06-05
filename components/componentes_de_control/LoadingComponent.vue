@@ -1,6 +1,8 @@
-<template>
+<template lang="html">
   <div v-if="loading" class="loading-page">
-    <p>Loading component...</p>
+    <div class="loader">
+      Cargando...
+    </div>
   </div>
 </template>
 
@@ -14,25 +16,70 @@ export default {
       this.loading = true
     },
     finish () {
-      setTimeout(() => {
-        this.loading = false
-      }, 5000)
+      this.loading = false
+    },
+    fail () {
+      this.loading = false
+      alert('Un error :(')
     }
   }
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 .loading-page {
+  z-index: 3;
   position: fixed;
-  top: 0;
-  left: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  padding-top: 200px;
+  background: rgba(241, 239, 239, 0.8);
   font-size: 30px;
   font-family: sans-serif;
+}
+
+$color-loader: #2b2524;
+
+.loader {
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-family: helvetica, arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: $color-loader;
+  letter-spacing: 0.2em;
+
+  &::before, &::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: $color-loader;
+    position: absolute;
+    animation: load .7s infinite alternate ease-in-out;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}
+
+@keyframes load {
+  0% { left: 0; height: 30px; width: 15px }
+  50% { height: 8px; width: 40px }
+  100% { left: 235px; height: 30px; width: 15px}
 }
 </style>

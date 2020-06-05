@@ -1,50 +1,56 @@
 <template>
-  <section>
-    <h3 class="titulo">
-      {{ productos.Categoria }}
-    </h3>
-    <ul :class="productos.Categoria">
-      <div class="album py-5">
+  <section class="CategoriaDeProductos">
+    <vcl-instagram v-if="$fetchState.pending" :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
+    <p v-else-if="$fetchState.error">
+      Error al Obtener Datos: {{ $fetchState.error.message }}
+    </p>
+    <div v-else>
+      <h3 class="titulo">
+        {{ productos.Categoria }}
+      </h3>
+      <ul :class="productos.Categoria">
         <div class="container">
-          <div class="col-md-4">
-            <div v-for="producto in productos.Articulos" :key="producto.id" class="card mb-4 box-shadow row">
-              <img :src="producto.urlImagen" class="card-img-top" style="width: 100%; display: block;">
-              <div class="card-body">
-                <p class="card-text">
-                  {{ producto.nombreProducto }}
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">
-                      Comprar
-                    </button>
+          <div class="row">
+            <div v-for="producto in productos.Articulos" :key="producto.id" class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <img :src="producto.urlImagen" class="card-img-top" style="width: 100%; display: block;">
+                <div class="card-body">
+                  <p class="card-text">
+                    {{ producto.nombreProducto }}
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a type="button" class="btn btn-sm btn-outline-secondary" href="https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20quiero%20más%20información%20porfavor!!">Comprar</a>
+
+                      <nuxt-link type="button" class="btn btn-sm btn-outline-secondary" :to="'/productos/'+ productos.Categoria + '/' + producto.id">
+                        Mas Información
+                      </nuxt-link>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </ul>
+      </ul>
+    </div>
   </section>
 </template>
 
 <script>
-import axios from 'axios'
+import { VclInstagram } from 'vue-content-loading'
+
 export default {
   name: 'TodosProductosDeUnaCategoria',
-  asyncData ({ params, error }) {
-    return axios.get('/data/' + params.categorias + '.json')
-      .then((res) => {
-        return { productos: res.data }
-      })
-      .catch((e) => {
-        error({ message: 'Producto no encontrado', statusCode: 404 })
-      })
+  components: {
+    VclInstagram
+  },
+  async fetch () {
+    this.productos = await this.$http.$get('/data/' + this.$route.params.categorias + '.json')
   },
   data () {
     return {
-      categoria: this.$route.params.categorias
+      productos: []
     }
   },
   head () {
@@ -64,5 +70,9 @@ export default {
 }
 .card-text{
   font-size: 25px;
+}
+.comprar{
+  color: unset;
+  text-decoration: none;
 }
 </style>

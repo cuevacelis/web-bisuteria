@@ -25,7 +25,7 @@ export default {
 
 <style>
 .contenido{
-  padding-top: 80px;
+  padding-top: 70px;
 }
 
 .button--green {

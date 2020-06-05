@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <section class="main">
     <swiper class="slider swiper" :options="swiperOption">
       <swiper-slide class="slider slide-1">
         <div class="texto">
@@ -65,7 +65,7 @@
           </h2>
           <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
           <p style="text-align: center;">
-            <a class="btn btn-secondary" href="#" role="button">Ver detalles »</a>
+            <a class="btn btn-secondary" href="#" role="button">Ver Collares »</a>
           </p>
         </div>
         <!-- /.col-lg-4 -->
@@ -82,7 +82,7 @@
           </h2>
           <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
           <p style="text-align: center;">
-            <a class="btn btn-secondary" href="#" role="button">Ver detalles »</a>
+            <a class="btn btn-secondary" href="#" role="button">Ver Maquillaje »</a>
           </p>
         </div>
         <!-- /.col-lg-4 -->
@@ -99,7 +99,7 @@
           </h2>
           <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
           <p style="text-align: center;">
-            <a class="btn btn-secondary" href="#" role="button">Ver detalles »</a>
+            <a class="btn btn-secondary" href="#" role="button">Ver SanValentin »</a>
           </p>
         </div>
         <!-- /.col-lg-4 -->
@@ -183,7 +183,7 @@
 
       <hr class="featurette-divider">
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

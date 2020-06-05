@@ -102,9 +102,6 @@ export default {
 
       return ['/'].concat(routes)
     } */
-    routes: [
-      'productos/Aretes'
-    ]
   },
   build: {
     /*
