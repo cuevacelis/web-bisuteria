@@ -109,12 +109,6 @@ export default {
   margin-bottom: 25px;
   margin-top: 25px;
 }
-.figure__slider{
-  /*background-color: rgb(109, 109, 109);
-  height: 0;
-  padding-bottom: 100%;
-  max-height: 280px;*/
-}
 .imagen__slider{
   width: 100%;
   max-height: 280px;
