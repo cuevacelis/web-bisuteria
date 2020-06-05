@@ -157,31 +157,6 @@
       </div>
 
       <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">
-            And lastly, this one.
-            <span class="text-muted">Checkmate.</span>
-          </h2>
-          <p
-            class="lead"
-          >
-            Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img
-            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
-            src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/26239627_1433138140148346_7865976743288717172_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFg2sGMa-8C7F2qxAhSGuF32ToMeSSS7rDZOgx5JJLusN9mp8P7HrMskKh2ElKohN41avA2Zyfv71XBd9HvOAiu&_nc_ohc=-RkjwwWrCZ4AX9dd4Id&_nc_ht=scontent.ftru2-1.fna&oh=58d949a652be3d4345f2197a9d2e99f2&oe=5EEA920A"
-            width="500"
-            height="500"
-            alt="accesorios para el cabello"
-          >
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
     </div>
   </section>
 </template>

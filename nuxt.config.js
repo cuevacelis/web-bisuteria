@@ -33,7 +33,7 @@ export default {
   // loading: { color: '#fff' },
   loading: '~/components/componentes_de_control/LoadingPage.vue',
   loadingIndicator: {
-    name: 'rotating-plane',
+    name: 'nuxt',
     color: '#3B8070',
     background: 'white'
   },
@@ -66,11 +66,11 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/style-resources',
-    '@nuxtjs/axios',
-    '@nuxt/http',
+    // '@nuxtjs/axios',
+    '@nuxt/http'
     // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    // '@nuxtjs/dotenv'
   ],
   // PWA
   /* pwa: {
@@ -82,8 +82,8 @@ export default {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {
-  },
+  /* axios: {
+  }, */
   http: {
     // proxyHeaders: false
   },
@@ -102,6 +102,10 @@ export default {
 
       return ['/'].concat(routes)
     } */
+    routes: [
+      'productos/Aretes/',
+      'productos/Relojes/'
+    ]
   },
   build: {
     /*

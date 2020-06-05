@@ -3,7 +3,7 @@
     <section v-if="$fetchState.pending" class="Cargando_Datos">
       <vcl-facebook :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
     </section>
-    <section v-else-if="$fetchState.error" class="Error_Carga_:(">
+    <section v-else-if="$fetchState.error" class="error_carga">
       <p>
         Error al Obtener Datos: {{ $fetchState.error.message }}
       </p>

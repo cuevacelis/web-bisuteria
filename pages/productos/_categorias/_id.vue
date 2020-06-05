@@ -11,6 +11,8 @@
           <div>
             {{ producto.nombreProducto }}
           </div>
+          <p> aqui iria la descripcion del producto</p>
+          <a type="button" class="btn btn-sm btn-outline-secondary" :href="'https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20deseo%20comprar%20el%20producto%20' + producto.nombreProducto + '%20,:)'">Comprar</a>
         </div>
       </div>
     </div>

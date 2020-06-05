@@ -1,12 +1,18 @@
 <template>
-  <div class="contenido">
-    <div>
-      <img src="https://www.elpaellador.com/en-construccion.png">
-      <nuxt-link to="/" class="button--green">
-        Volver al Inicio
-      </nuxt-link>
+  <section class="about">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">
+          Jade Fashion
+        </h1>
+        <p class="lead font-weight-normal">
+          Somos una de las tiendas con mas años de experiencia.....  ble bla bla
+        </p>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block" />
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block" />
     </div>
-  </div>
+  </section>
 </template>
 
 <script>

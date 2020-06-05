@@ -2,6 +2,7 @@
   <section class="CategoriaDeProductos">
     <vcl-instagram v-if="$fetchState.pending" :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
     <p v-else-if="$fetchState.error">
+      <ErrorDeComponents />
       Error al Obtener Datos: {{ $fetchState.error.message }}
     </p>
     <div v-else>
@@ -20,7 +21,7 @@
                   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <a type="button" class="btn btn-sm btn-outline-secondary" href="https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20quiero%20más%20información%20porfavor!!">Comprar</a>
+                      <a type="button" class="btn btn-sm btn-outline-secondary" :href="'https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20deseo%20comprar%20el%20producto%20' + producto.nombreProducto + '%20,:)'">Comprar</a>
 
                       <nuxt-link type="button" class="btn btn-sm btn-outline-secondary" :to="'/productos/'+ productos.Categoria + '/' + producto.id">
                         Mas Información
@@ -39,11 +40,12 @@
 
 <script>
 import { VclInstagram } from 'vue-content-loading'
-
+const ErrorDeComponents = () => import('@/components/componentes_de_control/ErrorDeComponents')
 export default {
   name: 'TodosProductosDeUnaCategoria',
   components: {
-    VclInstagram
+    VclInstagram,
+    ErrorDeComponents
   },
   async fetch () {
     this.productos = await this.$http.$get('/data/' + this.$route.params.categorias + '.json')

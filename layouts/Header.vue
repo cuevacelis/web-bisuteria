@@ -28,7 +28,7 @@
           </li>
           <li class="nav-item">
             <nuxt-link class="nav-link" to="/about">
-              Acerca De
+              ¿Quienes Somos?
             </nuxt-link>
           </li>
         </ul>
