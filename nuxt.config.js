@@ -117,6 +117,7 @@ export default {
       'productos/Aretes/4',
       'productos/Aretes/5',
       'productos/Aretes/6',
+      'productos/Aretes/7',
       'productos/Relojes/',
       'productos/Collares/',
       'productos/Maquillaje/',

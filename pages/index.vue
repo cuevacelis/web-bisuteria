@@ -55,10 +55,11 @@
         <div class="col-lg-4">
           <img
             class="bd-placeholder-img rounded-circle"
-            src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/48359486_1835382333257256_931420476259958784_n.jpg?_nc_cat=109&_nc_sid=8bfeb9&_nc_eui2=AeF27zwo5vfWpQJu_rthCAieq2qHAa_thX-raocBr-2Ff8JybAXS8YsO_z-3N295us1YJ5ie-RuHweH1g0u0feoo&_nc_ohc=bBhQvrjxhCAAX8WD4b2&_nc_ht=scontent.ftru2-1.fna&oh=24ecbb949f339dea3e135308dfc62b65&oe=5ECB4247"
+            src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
             width="140"
             height="140"
             alt="anillo de trebol"
+            loading="lazy"
           >
           <h2 class="subtitulo">
             Collares
@@ -72,10 +73,11 @@
         <div class="col-lg-4">
           <img
             class="bd-placeholder-img rounded-circle"
-            src="https://scontent.ftru2-2.fna.fbcdn.net/v/t1.0-9/26169350_1431848840277276_4031138427698201783_n.jpg?_nc_cat=107&_nc_sid=8bfeb9&_nc_eui2=AeHY9ChfQQYkHCBOq5n6GqMVL5RiZVJbC10vlGJlUlsLXZFIKkyEtcIwk_CJ3o11aUZzouBXrrsRdQz_z_bqjyCa&_nc_ohc=ahFNyHPo7zQAX-_p0Rd&_nc_ht=scontent.ftru2-2.fna&oh=abb8170b1a7cf0d174668b3883a86084&oe=5ECEEAAC"
+            src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/26239627_1433138140148346_7865976743288717172_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFg2sGMa-8C7F2qxAhSGuF32ToMeSSS7rDZOgx5JJLusN9mp8P7HrMskKh2ElKohN41avA2Zyfv71XBd9HvOAiu&_nc_ohc=dmQ5SEJyQ1AAX-WnlDK&_nc_ht=scontent.ftru2-1.fna&oh=40d273fcc320d4b645c1d5b1e6879f97&oe=5F024D0A"
             width="140"
             height="140"
             alt="maquillaje de flores"
+            loading="lazy"
           >
           <h2 class="subtitulo">
             Maquillaje
@@ -89,10 +91,11 @@
         <div class="col-lg-4">
           <img
             class="bd-placeholder-img rounded-circle"
-            src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/77272478_2431629953632488_3608720200288960512_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeEGcXqPD7OjfrkENWib2nFhOjcLR2aY6BI6NwtHZpjoEhTrFCPOoN5QymSAA1QTauwPgrKk2xeKbukYhsuoIq2b&_nc_ohc=tBcZd2WK1ZAAX-R7W3t&_nc_ht=scontent.ftru2-3.fna&oh=e14a43c0384dea0f24f1d216f15348f3&oe=5ECDB9EF"
+            src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/77272478_2431629953632488_3608720200288960512_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeEGcXqPD7OjfrkENWib2nFhOjcLR2aY6BI6NwtHZpjoEhTrFCPOoN5QymSAA1QTauwPgrKk2xeKbukYhsuoIq2b&_nc_ohc=ufxg1uIhAA4AX8QM5cO&_nc_ht=scontent.ftru2-3.fna&oh=f39e2221671d1277c8c22f332f742186&oe=5F01246F"
             width="140"
             height="140"
             alt="accesorio de corazon con candatido san valentin"
+            loading="lazy"
           >
           <h2 class="subtitulo">
             San Valentin♥
@@ -127,6 +130,7 @@
             width="500"
             height="500"
             alt="corazon con candadito romantico"
+            loading="lazy"
           >
         </div>
       </div>
@@ -152,6 +156,7 @@
             width="500"
             height="500"
             alt="aretes de perla"
+            loading="lazy"
           >
         </div>
       </div>

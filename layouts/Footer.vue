@@ -11,25 +11,14 @@
           </div>
 
           <div class="col-md-4">
-            <h3>¿COMPRA AL POR MAYOR?</h3>
-            <ul class="social">
-              <li>
-                <p>
-                  COMUNICATE A NUESTRO CORREO PROFESIONAL<br>
-                  <span class="ico ico-em" /><a class="link__footer" href="mailto:jadefashion.bisuteria@outlook.com">jadefashion.bisuteria@outlook.com</a>
-                </p>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <h3>CONTACTENOS</h3>
-          <div class="col contact">
-            <p>
-              JADE FASHION.<br>PLAZA DE TOROS,TRUJILLO<br>PERÚ<br>
-              <span class="ico ico-ph" /><a class="link__footer" href="https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20quiero%20más%20información%20porfavor!!">(+51) 983 475 092</a>
-            </p>
+            <h3>CONTACTENOS</h3>
+            <div class="col contact">
+              <p>
+                JADE FASHION.<br>PLAZA DE TOROS,TRUJILLO<br>PERÚ<br>
+                <span class="ico ico-ph" /><a class="link__footer" href="https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20quiero%20más%20información%20porfavor!!">(+51) 983 475 092</a>
+                <span class="ico ico-em" /><a class="link__footer" href="mailto:jadefashion.bisuteria@outlook.com">jadefashion.bisuteria@outlook.com</a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

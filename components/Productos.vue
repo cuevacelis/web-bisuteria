@@ -19,8 +19,7 @@
           <swiper-slide v-for="producto in productos.Articulos" :key="producto.id">
             <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
               <figure class="figure__slider">
-                <img :data-src="producto.urlImagen" class="swiper-lazy imagen__slider">
-                <div class="swiper-lazy-preloader swiper-lazy-preloader-black imagen__preload" />
+                <img :src="producto.urlImagen" class="imagen__slider" loading="lazy">
               </figure>
               <p class="texto__slider">
                 {{ producto.nombreProducto }}
@@ -61,7 +60,7 @@ export default {
       url: 'https://web-bisuteria.now.sh',
       productos: [],
       swiperOption: {
-        lazy: true,
+        // lazy: true,
         loop: true,
         breakpoints: {
           200: {
