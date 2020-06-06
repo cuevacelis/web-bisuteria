@@ -48,11 +48,12 @@ export default {
     ErrorDeComponents
   },
   async fetch () {
-    this.productos = await this.$http.$get('/data/' + this.$route.params.categorias + '.json')
+    this.productos = await this.$http.$get(this.url + '/data/' + this.$route.params.categorias + '.json')
   },
   data () {
     return {
-      productos: []
+      productos: [],
+      url: 'https://web-bisuteria.now.sh'
     }
   },
   head () {

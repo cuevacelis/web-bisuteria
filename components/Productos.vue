@@ -53,12 +53,12 @@ export default {
       default: ''
     }
   },
-
   async fetch () {
-    this.productos = await this.$http.$get('/data/' + this.tipo + '.json')
+    this.productos = await this.$http.$get(this.url + '/data/' + this.tipo + '.json')
   },
   data () {
     return {
+      url: 'https://web-bisuteria.now.sh',
       productos: [],
       swiperOption: {
         lazy: true,

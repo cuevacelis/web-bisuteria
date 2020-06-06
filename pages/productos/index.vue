@@ -10,7 +10,7 @@
     </section>
     <section class="productos">
       <section class="lista__productos">
-        <Productos :tipo="productoArete" />
+        <Productos tipo="Aretes" />
       </section>
     </section>
   </div>
@@ -26,7 +26,6 @@ export default {
   },
   data () {
     return {
-      productoArete: 'Aretes'
     }
   },
   head () {
