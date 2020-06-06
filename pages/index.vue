@@ -179,7 +179,6 @@ export default {
     return {
       swiperOption: {
         speed: 600,
-        effect: 'fade',
         autoplay: {
           delay: 1600,
           disableOnInteraction: false
@@ -229,7 +228,7 @@ export default {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    color: $white;
+    color: white;
     box-sizing: border-box;
     padding: 0 80px;
     background-color: transparent;
@@ -252,7 +251,7 @@ export default {
         line-height: 46px;
         letter-spacing: 9px;
         font-weight: 300;
-        margin-bottom: $gap;
+        margin-bottom: 1rem;
       }
 
       .text {

@@ -1,6 +1,6 @@
 <template>
-  <div class="contenido-productos">
-    <section class="texto-principal jumbotron text-center">
+  <section class="contenido-productos jumbotron">
+    <section class="texto-principal  text-center">
       <div class="container">
         <h1>Productos</h1>
         <p class="lead text-muted">
@@ -8,21 +8,20 @@
         </p>
       </div>
     </section>
-    <section class="productos">
-      <section class="lista__productos">
-        <Productos tipo="Aretes" />
-      </section>
+    <section class="Productos">
+      <Producto class="Producto" tipo="Aretes" />
+      <Producto class="Producto" tipo="Aretes" />
     </section>
-  </div>
+  </section>
 </template>
 
 <script>
-const Productos = () => import('@/components/Productos')
+const Producto = () => import('@/components/Producto')
 
 export default {
   name: 'PageProductos',
   components: {
-    Productos
+    Producto
   },
   data () {
     return {
@@ -37,4 +36,13 @@ export default {
 </script>
 
 <style>
+.contenido-productos{
+  margin: 0px;
+}
+.Producto{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+}
 </style>

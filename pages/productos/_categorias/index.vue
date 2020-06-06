@@ -1,11 +1,13 @@
 <template>
   <section class="CategoriaDeProductos">
-    <vcl-instagram v-if="$fetchState.pending" :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
-    <p v-else-if="$fetchState.error">
+    <vcl-instagram v-if="$fetchState.pending" :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" class="loading" />
+    <section v-else-if="$fetchState.error" class="loading_error">
       <ErrorDeComponents />
-      Error al Obtener Datos: {{ $fetchState.error.message }}
-    </p>
-    <div v-else>
+      <p>
+        Error al Obtener Datos: {{ $fetchState.error.message }}
+      </p>
+    </section>
+    <section v-else>
       <h3 class="titulo">
         {{ productos.Categoria }}
       </h3>
@@ -36,7 +38,7 @@
           </div>
         </section>
       </ul>
-    </div>
+    </section>
   </section>
 </template>
 

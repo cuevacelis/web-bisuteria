@@ -46,15 +46,13 @@ export default {
     'bootstrap/dist/css/bootstrap.min.css'
   ],
   styleResources: {
-    scss: '@/assets/scss/init.scss'
   },
   /*
   ** Complementos para cargar antes de montar la aplicación
   */
   plugins: [
-    // '~plugins/scriptsPlantilla',
-    { src: '@/plugins/vue-awesome-swiper', mode: 'client' },
-    { src: '@/plugins/vue-progressive-image', mode: 'client' }
+    { src: '@/plugins/vue-awesome-swiper', mode: 'client' }
+    // { src: '@/plugins/vue-progressive-image', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -67,7 +65,7 @@ export default {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/style-resources',
+    // '@nuxtjs/style-resources',
     // '@nuxtjs/axios',
     '@nuxt/http',
     ['@nuxtjs/component-cache', {

@@ -1,19 +1,23 @@
 <template>
   <div>
-    <section v-if="$fetchState.pending" class="Cargando_Datos">
+    <section v-if="$fetchState.pending" class="loading">
       <vcl-facebook :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
     </section>
-    <section v-else-if="$fetchState.error" class="error_carga">
+    <section v-else-if="$fetchState.error" class="loading_error">
       <p>
         Error al Obtener Datos: {{ $fetchState.error.message }}
       </p>
     </section>
     <section v-else :class="productos.Tipo">
       <div class="contenido__slider">
+        <span class="titulo__slider">
+          {{ productos.Categoria }}
+        </span>
+
         <nuxt-link :to="'/productos/'+productos.Categoria">
-          <h2 class="titulo__slider">
-            {{ productos.Categoria }}
-          </h2>
+          <span>
+            Ver más
+          </span>
         </nuxt-link>
         <swiper class="swiper" :options="swiperOption">
           <swiper-slide v-for="producto in productos.Articulos" :key="producto.id">
@@ -65,15 +69,15 @@ export default {
         breakpoints: {
           200: {
             slidesPerView: 2,
-            spaceBetween: 10
+            spaceBetween: 4
           },
           400: {
             slidesPerView: 3,
-            spaceBetween: 10
+            spaceBetween: 6
           },
           600: {
             slidesPerView: 4,
-            spaceBetween: 10
+            spaceBetween: 8
           },
           1000: {
             slidesPerView: 5,
@@ -81,11 +85,11 @@ export default {
           },
           1400: {
             slidesPerView: 6,
-            spaceBetween: 10
+            spaceBetween: 12
           },
           1600: {
             slidesPerView: 7,
-            spaceBetween: 10
+            spaceBetween: 14
           }
         },
         pagination: {
@@ -104,14 +108,8 @@ export default {
 </script>
 
 <style>
-.Cargando_Datos{
-  margin: 25px;
-}
-.Producto{
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-bottom: 25px;
-  margin-top: 25px;
+.loading{
+  margin:20px
 }
 .imagen__slider{
   width: 100%;
@@ -121,10 +119,15 @@ export default {
   justify-content: center;
   align-items: center;
 }
+.titulo__slider{
+  color: #444;
+  font-weight: 400;
+  font-size: 2rem;
+}
 .texto__slider{
-  color: black;
+  color: rgb(24, 24, 24);
   font-size: inherit;
-  line-height: 18px;
+  line-height: 1.4rem;
   margin: 5px 0 0;
   max-height: 36px;
   overflow: hidden;
