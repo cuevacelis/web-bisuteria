@@ -1,5 +1,6 @@
 // eslint-disable-next-line nuxt/no-cjs-in-config
 // const fetch = require('node-fetch')
+// const url = 'https://web-bisuteria.now.sh'
 export default {
   mode: 'universal', // Mejora el SEO
   // mode: 'spa', // No mejora el SEO
@@ -103,13 +104,19 @@ export default {
   },
   generate: {
     /* async routes () {
-      const productos = await fetch('/data/' + 'aretes' + '.json').then(res => res.json())
+      const productos = await fetch(url + '/data/' + 'Aretes' + '.json').then(res => res.json())
       const routes = productos.map(productos => `/productos/${productos.Categoria}`)
 
       return ['/'].concat(routes)
     } */
     routes: [
       'productos/Aretes/',
+      'productos/Aretes/1',
+      'productos/Aretes/2',
+      'productos/Aretes/3',
+      'productos/Aretes/4',
+      'productos/Aretes/5',
+      'productos/Aretes/6',
       'productos/Relojes/',
       'productos/Collares/',
       'productos/Maquillaje/',
