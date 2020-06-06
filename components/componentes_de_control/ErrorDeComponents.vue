@@ -1,34 +1,35 @@
 <template>
-  <div class="container">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="error-template">
-            <h1>
-              Oops!
-            </h1>
-            <h2>
-              Parece que no se encontro lo que buscabas 😅
-            </h2>
-            <h3>
-              Verifica la URL 💗
-            </h3>
-            <div class="error-actions">
-              <nuxt-link to="/" class="btn btn-primary btn-lg">
-                <span class="glyphicon glyphicon-home" />
-                Volver a Pagina Principal
-              </nuxt-link>
-            </div>
-          </div>
-        </div>
+  <section class="ErrorComponente">
+    <div class="error-template jumbotron">
+      <div class="container">
+        <h1>Oops! 😅</h1>
+        <p class="lead text-muted">
+          Error: {{ error }}
+        </p>
+      </div>
+      <div class="error-actions">
+        <nuxt-link to="/" class="btn btn-primary btn-lg">
+          Volver a Pagina Principal
+        </nuxt-link>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
 export default {
-  layout: 'blog'
+  layout: 'blog',
+  props: {
+    error: {
+      type: String,
+      default: ''
+    }
+  },
+  head () {
+    return {
+      title: 'Opps! - JadeFashion'
+    }
+  }
 }
 </script>
 <style scoped>

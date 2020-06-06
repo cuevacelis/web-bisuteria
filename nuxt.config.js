@@ -43,7 +43,9 @@ export default {
   ** CSS global
   */
   css: [
-    'bootstrap/dist/css/bootstrap.min.css'
+    'normalize.css/normalize.css',
+    'bootstrap/dist/css/bootstrap.min.css',
+    '@/assets/css/style.css'
   ],
   styleResources: {
   },

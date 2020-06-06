@@ -20,7 +20,6 @@ export default {
     },
     fail () {
       this.loading = false
-      alert('Ocurrio un Error al Cargar la Pagina :(')
     }
   }
 }

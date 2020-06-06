@@ -1,6 +1,6 @@
 <template>
   <section class="contenido-productos jumbotron">
-    <section class="texto-principal  text-center">
+    <section class="texto-principal text-center">
       <div class="container">
         <h1>Productos</h1>
         <p class="lead text-muted">
@@ -36,9 +36,6 @@ export default {
 </script>
 
 <style>
-.contenido-productos{
-  margin: 0px;
-}
 .Producto{
   padding-top: 10px;
   padding-bottom: 10px;

@@ -108,9 +108,6 @@ export default {
 </script>
 
 <style>
-.loading{
-  margin:20px
-}
 .imagen__slider{
   width: 100%;
   max-height: 280px;
