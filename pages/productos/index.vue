@@ -7,7 +7,7 @@
           Encuentra todo tipo de bisuteria y al mejor precio 💰.
         </p>
         <p class="lead text-muted">
-          Compra aretes, relojes,collares,etc.
+          Compra aretes, relojes, collares, joyas elaboradas en oro y plata peruana. Alianzas, anillos de compromiso, etc.
         </p>
       </div>
     </section>

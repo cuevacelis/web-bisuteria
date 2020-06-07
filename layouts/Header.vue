@@ -38,7 +38,12 @@
 </template>
 
 <script>
+// import 'plugins/scriptsPlantilla'
 export default {
+
+  mounted () {
+
+  }
 }
 </script>
 

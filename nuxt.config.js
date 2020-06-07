@@ -19,7 +19,7 @@ export default {
       { name: 'robots', content: 'index' }
     ],
     noscript: [
-      { innerHTML: 'Body No Scripts', body: true }
+      { innerHTML: 'Necesitas Usar un Navegador Mas Moderno :)', body: true }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -60,21 +60,18 @@ export default {
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/pwa'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    // '@nuxtjs/style-resources',
-    // '@nuxtjs/axios',
     '@nuxt/http',
     ['@nuxtjs/component-cache', {
       max: 10000,
       maxAge: 1000 * 60 * 60
     }]
-    // '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
     // '@nuxtjs/dotenv'
 
@@ -109,6 +106,7 @@ export default {
 
       return ['/'].concat(routes)
     } */
+    fallback: '404.html',
     routes: [
       'productos/Aretes/',
       'productos/Aretes/1',

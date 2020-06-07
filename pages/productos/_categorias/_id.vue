@@ -72,7 +72,7 @@
               </div>
             </section>
 
-            <section class="Otros-Articulos">
+            <!--<section class="Otros-Articulos">
               <div class="row">
                 <div class="col-lg-12">
                   <div class="row">
@@ -189,7 +189,7 @@
                   </div>
                 </div>
               </div>
-            </section>
+            </section>-->
           </section>
         </div>
       </div>
