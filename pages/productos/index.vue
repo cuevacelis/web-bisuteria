@@ -4,12 +4,14 @@
       <div class="container">
         <h1>Productos</h1>
         <p class="lead text-muted">
-          Joyería especializada con más de 10 años en el distrito de La Libertad. Joyas elaboradas en oro y plata peruana. Alianzas, Anillos de compromiso y mucho mas
+          Encuentra todo tipo de bisuteria y al mejor precio 💰.
+        </p>
+        <p class="lead text-muted">
+          Compra aretes, relojes,collares,etc.
         </p>
       </div>
     </section>
     <section class="Productos">
-      <Producto class="Producto" tipo="Aretes" />
       <Producto class="Producto" tipo="Aretes" />
     </section>
   </section>
