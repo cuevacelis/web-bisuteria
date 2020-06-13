@@ -17,7 +17,7 @@
         </div>
         <section :class="productos.Categoria">
           <ul class="Producto">
-            <div class="container">
+            <div class="">
               <div class="row">
                 <div v-for="producto in productos.Articulos" :key="producto.id" class="col-md-4">
                   <div class="card mb-4 shadow-sm">
@@ -31,10 +31,9 @@
                         </nuxt-link>
                       </p>
                       <div class="d-flex justify-content-between align-items-center">
-                        <div class="btn-group">
-                          <a type="button" class="btn btn-sm btn-outline-secondary" :href="'https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20deseo%20comprar%20el%20producto%20' + producto.nombreProducto + '%20,:)'">Comprar</a>
-
-                          <nuxt-link type="button" class="btn btn-sm btn-outline-secondary" :to="'/productos/'+ productos.Categoria + '/' + producto.id">
+                        <div class="grupo-de-botones">
+                          <a type="button" class="" :href="'https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20deseo%20comprar%20el%20producto%20' + producto.nombreProducto + '%20,:)'">Comprar</a>
+                          <nuxt-link type="button" class="" :to="'/productos/'+ productos.Categoria + '/' + producto.id">
                             Más Información
                           </nuxt-link>
                         </div>

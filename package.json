@@ -1,5 +1,5 @@
 {
-  "name": "web-bisuteria",
+  "name": "bisuteria-jade-fashion",
   "version": "1.0.0",
   "private": true,
   "description": "Web de Bisuteria",
@@ -20,7 +20,6 @@
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "@nuxtjs/style-resources": "1.0.0",
     "axios": "^0.19.2",
-    "bootstrap": "^4.5.0",
     "epic-spinners": "^1.1.0",
     "normalize.css": "^8.0.1",
     "nuxt": "2.12.2",
@@ -39,6 +38,7 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "3.0.0",
     "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/tailwindcss": "^2.0.0",
     "babel-eslint": "10.1.0",
     "eslint": "^7.0.0",
     "eslint-plugin-nuxt": ">=1.0.0",

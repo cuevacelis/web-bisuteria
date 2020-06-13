@@ -1,13 +1,10 @@
 <template>
-  <section class="contenido-productos jumbotron">
-    <section class="texto-principal text-center">
-      <div class="container">
+  <section class="contenido-productos px-2 py-2">
+    <section class="texto-principal-productos text-center">
+      <div class="">
         <h1>Productos</h1>
         <p class="lead text-muted">
           Encuentra todo tipo de bisuteria y al mejor precio 💰.
-        </p>
-        <p class="lead text-muted">
-          Compra aretes, relojes, collares, joyas elaboradas en oro y plata peruana. Alianzas, anillos de compromiso, etc.
         </p>
       </div>
     </section>

@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <section class="contenido_web">
     <Header />
-    <div class="contenido">
-      <fade-transition :duration="250">
+    <div class="contenido_principal">
+      <fade-transition :duration="800">
         <nuxt />
       </fade-transition>
     </div>
     <Footer />
-  </div>
+  </section>
 </template>
 
 <script>
@@ -24,36 +24,7 @@ export default {
 </script>
 
 <style>
-.contenido{
-  padding-top: 70px;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.contenido_principal{
+  padding-top: 65px;
 }
 </style>

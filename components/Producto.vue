@@ -4,9 +4,14 @@
       <vcl-facebook :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
     </section>
     <section v-else-if="$fetchState.error" class="loading_error">
-      <p>
-        Error al Obtener Datos: {{ $fetchState.error.message }}
-      </p>
+      <div class="mssg_error">
+        <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4" role="alert">
+          <p class="font-bold">
+            Error al Obtener Datos!
+          </p>
+          <p>{{ $fetchState.error.message }}</p>
+        </div>
+      </div>
     </section>
     <section v-else :class="productos.Tipo">
       <div class="contenido__slider">

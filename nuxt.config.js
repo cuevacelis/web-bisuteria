@@ -25,8 +25,6 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.slim.min.js' },
-      { src: 'https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js', async: true }
     ]
   },
   /*
@@ -44,7 +42,6 @@ export default {
   */
   css: [
     'normalize.css/normalize.css',
-    'bootstrap/dist/css/bootstrap.min.css',
     '@/assets/css/style.css'
   ],
   styleResources: {
@@ -61,8 +58,14 @@ export default {
   */
   buildModules: [
     '@nuxtjs/eslint-module',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/tailwindcss'
   ],
+  tailwindcss: {
+    configPath: 'tailwind.config.js',
+    cssPath: '@/assets/css/tailwind.css',
+    exposeConfig: false
+  },
   /*
   ** Nuxt.js modules
   */
@@ -96,7 +99,7 @@ export default {
   */
   server: {
     port: 3000, // default: 3000
-    // host: '0.0.0.0', // default: localhost,
+    host: '0.0.0.0', // default: localhost,
     timing: false
   },
   generate: {
