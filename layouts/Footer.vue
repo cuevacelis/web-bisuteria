@@ -1,16 +1,16 @@
 <template>
   <footer class="footer">
     <div class="container">
-      <div class="cols">
-        <div class="row">
-          <div class="col-md-4">
+      <div class="flex-1">
+        <div class="row-auto flex mb-4">
+          <div class="flex-1 pl-6">
             <h3>REDES SOCIALES</h3>
             <ul class="social">
               <li><a class="link__footer" href="https://www.facebook.com/JadeFashion-681097335352434"><span class="ico ico-fb" />FACEBOOK</a></li>
             </ul>
           </div>
 
-          <div class="col-md-4">
+          <div class="flex-1">
             <h3>CONTACTENOS</h3>
             <div class="col contact">
               <p>
@@ -37,6 +37,7 @@
   clear: both;
   background-color: #121213;
   padding: 27px 0 0;
+  padding-bottom: 17px;
   color: #a5a5aa;
   font-size: 14px;
   line-height: 30px;

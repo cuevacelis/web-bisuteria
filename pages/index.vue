@@ -1,5 +1,5 @@
 <template>
-  <section class="main">
+  <section class="main bg-gray-200">
     <section class="contenido_banner_principal">
       <swiper class="slider swiper" :options="swiperOption">
         <swiper-slide class="slider slide-1">
@@ -72,87 +72,99 @@
           </div>
         </div>
       </section>
-
-      <section class="productos_exhibicion">
+      <section class="productos_exhibicion pb-32 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 rounded-lg bg-white">
+        <h1 class="mb-2 pl-6 pt-6">Collares</h1>
         <section class="collares_exhibicion">
-          <div class="">
-            <img
-              class="bd-placeholder-img rounded-circle"
-              src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
-              width="140"
-              height="140"
-              alt="anillo de trebol"
-              loading="lazy"
-            >
-            <h2 class="subtitulo">
-              Collares
-            </h2>
-            <p>$50</p>
-            <p style="text-align: center;">
-              <a class="btn btn-secondary" href="#" role="button">Ver Collares »</a>
-            </p>
-          </div>
-          <div class="">
-            <img
-              class="bd-placeholder-img rounded-circle"
-              src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
-              width="140"
-              height="140"
-              alt="anillo de trebol"
-              loading="lazy"
-            >
-            <h2 class="subtitulo">
-              Collares
-            </h2>
-            <p>$50</p>
-            <p style="text-align: center;">
-              <a class="btn btn-secondary" href="#" role="button">Ver Collares »</a>
-            </p>
-          </div>
-        </section>
-
-        <section class="maquillaje_exhibicion">
-          <div class="col-lg-4">
-            <img
-              class="bd-placeholder-img rounded-circle"
-              src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/26239627_1433138140148346_7865976743288717172_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFg2sGMa-8C7F2qxAhSGuF32ToMeSSS7rDZOgx5JJLusN9mp8P7HrMskKh2ElKohN41avA2Zyfv71XBd9HvOAiu&_nc_ohc=dmQ5SEJyQ1AAX-WnlDK&_nc_ht=scontent.ftru2-1.fna&oh=40d273fcc320d4b645c1d5b1e6879f97&oe=5F024D0A"
-              width="140"
-              height="140"
-              alt="maquillaje de flores"
-              loading="lazy"
-            >
-            <h2 class="subtitulo">
-              Maquillaje
-            </h2>
-            <p>$50</p>
-            <p style="text-align: center;">
-              <a class="btn btn-secondary" href="#" role="button">Ver Maquillaje »</a>
-            </p>
-          </div>
-        </section>
-
-        <section class="sanValentin_exhibicion">
-          <div class="col-lg-4">
-            <img
-              class="bd-placeholder-img rounded-circle"
-              src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/77272478_2431629953632488_3608720200288960512_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeEGcXqPD7OjfrkENWib2nFhOjcLR2aY6BI6NwtHZpjoEhTrFCPOoN5QymSAA1QTauwPgrKk2xeKbukYhsuoIq2b&_nc_ohc=ufxg1uIhAA4AX8QM5cO&_nc_ht=scontent.ftru2-3.fna&oh=f39e2221671d1277c8c22f332f742186&oe=5F01246F"
-              width="140"
-              height="140"
-              alt="accesorio de corazon con candatido san valentin"
-              loading="lazy"
-            >
-            <h2 class="subtitulo">
-              San Valentin♥
-            </h2>
-            <p>$50.</p>
-            <p style="text-align: center;">
-              <a class="btn btn-secondary" href="#" role="button">Ver SanValentin »</a>
-            </p>
+          <div class="flex mb-4 pt-5">
+            <div class="w-1/2 h-12">
+              <img
+                class="bd-placeholder-img rounded-circle"
+                src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
+                width="140"
+                height="140"
+                alt="anillo de trebol"
+                loading="lazy"
+              >
+              <h2 class="subtitulo text-lg font-mono">
+                Collares
+              </h2>
+              <p class="text-center">$50</p>
+              <p style="text-align: center;">
+                <a class="btn btn-secondary text-gray-600" href="#" role="button">Ver Collares »</a>
+              </p>
+            </div>
+            <div class="w-1/2 h-12">
+              <img
+                class="bd-placeholder-img rounded-circle"
+                src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
+                width="140"
+                height="140"
+                alt="anillo de trebol"
+                loading="lazy"
+              >
+              <h2 class="subtitulo text-lg font-mono">
+                Collares
+              </h2>
+              <p class="text-center">$50</p>
+              <p style="text-align: center;">
+                <a class="btn btn-secondary text-gray-600" href="#" role="button">Ver Collares »</a>
+              </p>
+            </div>
           </div>
         </section>
       </section>
 
-      <section class="banner_todos_productos">
+      <section class="productos_exhibicion pb-32 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 rounded-lg bg-white">
+        <h1 class="mb-2 pl-6 pt-6 pb-6">Maquillajes</h1>
+        <section class="collares_exhibicion">
+          <div class="flex mb-4 justify-center">
+            <div class="w-1/2 h-12">
+              <img
+                class="bd-placeholder-img rounded-circle"
+                src="https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/26239627_1433138140148346_7865976743288717172_n.jpg?_nc_cat=104&_nc_sid=8bfeb9&_nc_eui2=AeFg2sGMa-8C7F2qxAhSGuF32ToMeSSS7rDZOgx5JJLusN9mp8P7HrMskKh2ElKohN41avA2Zyfv71XBd9HvOAiu&_nc_ohc=dmQ5SEJyQ1AAX-WnlDK&_nc_ht=scontent.ftru2-1.fna&oh=40d273fcc320d4b645c1d5b1e6879f97&oe=5F024D0A"
+                width="140"
+                height="140"
+                alt="maquillaje de flores"
+                loading="lazy"
+              >
+              <h2 class="subtitulo text-lg font-mono">
+                Maquillaje
+              </h2>
+              <p class="text-center">$50</p>
+              <p style="text-align: center;">
+                <a class="btn btn-secondary text-gray-600" href="#" role="button">Ver Maquillaje »</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="productos_exhibicion pb-48 border-r border-b border-l border-gray-400 lg:border-l-0 lg:border-t lg:border-gray-400 rounded-lg bg-white">
+        <h1 class="mb-2 pl-6 pt-6 pb-6">San Valentin♥</h1>
+        <section class="collares_exhibicion">
+          <div class="flex mb-4 justify-center">
+            <div class="w-1/2 h-12">
+              <img
+                class="bd-placeholder-img rounded-circle"
+                src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/77272478_2431629953632488_3608720200288960512_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeEGcXqPD7OjfrkENWib2nFhOjcLR2aY6BI6NwtHZpjoEhTrFCPOoN5QymSAA1QTauwPgrKk2xeKbukYhsuoIq2b&_nc_ohc=ufxg1uIhAA4AX8QM5cO&_nc_ht=scontent.ftru2-3.fna&oh=f39e2221671d1277c8c22f332f742186&oe=5F01246F"
+                width="140"
+                height="140"
+                alt="accesorio de corazon con candatido san valentin"
+                loading="lazy"
+              >
+              <h2 class="subtitulo text-lg font-mono">
+                San Valentin♥
+              </h2>
+              <p class="text-center">$50.</p>
+              <p style="text-align: center;">
+                <a class="btn btn-secondary text-gray-600" href="#" role="button">Ver SanValentin »</a>
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section class="banner_todos_productos pt-10">
         <p>Mira todos los productos que tenemos para ti</p>
         <p>click aqui</p>
       </section>
