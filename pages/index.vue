@@ -65,11 +65,6 @@
               </p>
             </div>
           </div>
-          <div class="flex justify-center py-1 pb-1">
-            <nuxt-link type="button" class="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 border-b-4 border-gray-700 hover:border-gray-700 rounded" to="/productos">
-              Ver Productos
-            </nuxt-link>
-          </div>
         </div>
       </section>
 
@@ -147,7 +142,7 @@
 
       <section class="banner_todos_productos pt-10">
         <p>Mira todos los productos que tenemos para ti</p>
-        <p>click aqui</p>
+        <p>Ver Más</p>
       </section>
     </section>
   </section>
