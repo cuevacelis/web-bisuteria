@@ -55,7 +55,7 @@
             </div>
             <div>
               <p class="font-bold py-1">
-                Jade Fashion
+                Jade Fashion💎
               </p>
               <p class="text-sm">
                 Compra aretes, relojes, collares, joyas elaboradas en oro y plata peruana.
@@ -70,59 +70,11 @@
 
       <section class="collares">
         <section class="titulo">
-          <h1>Collares</h1>
+          <h1>Collares📿</h1>
         </section>
         <section class="productos_inicio flex flex-wrap">
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="contenido-producto p-2 m-2 rounded-md bg-white shadow-lg">
-              <img
-                class="rounded-md"
-                src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
-                alt="anillo de trebol"
-                loading="lazy"
-              >
-              <h2 class="titulo_imagen">
-                Collares
-              </h2>
-              <p class="precio">
-                $50
-              </p>
-            </div>
-          </section>
-          <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="contenido-producto p-2 m-2 rounded-md bg-white shadow-lg">
-              <img
-                class="rounded-md"
-                src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
-                alt="anillo de trebol"
-                loading="lazy"
-              >
-              <h2 class="titulo_imagen">
-                Collares
-              </h2>
-              <p class="precio">
-                $50
-              </p>
-            </div>
-          </section>
-          <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="contenido-producto p-2 m-2 rounded-md bg-white shadow-lg">
-              <img
-                class="rounded-md"
-                src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
-                alt="anillo de trebol"
-                loading="lazy"
-              >
-              <h2 class="titulo_imagen">
-                Collares
-              </h2>
-              <p class="precio">
-                $50
-              </p>
-            </div>
-          </section>
-          <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="contenido-producto p-2 m-2 rounded-md bg-white shadow-lg">
+            <div class="contenido-producto p-2 m-2 bg-white shadow-lg">
               <img
                 class="rounded-md"
                 src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
