@@ -29,7 +29,9 @@
                   <a class="text-gray-600 hover:text-gray-400 font-semibold block pb-2 text-sm" href="https://goo.gl/maps/pTZSvLvRw7m8LcfSA" target="_blank">Plaza de Toros, Trujillo-PE</a>
                 </li>
                 <li>
-                  <a class="text-gray-600 hover:text-gray-400 font-semibold block pb-2 text-sm" href="https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20quiero%20más%20información%20porfavor!!">(+51) 983 475 092</a>
+                  <a class="text-gray-600 hover:text-gray-400 font-semibold block pb-2 text-sm" href="https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20quiero%20más%20información%20porfavor!!">
+                    <i class="fab fa-whatsapp mr-2" />(+51) 983 475 092
+                  </a>
                 </li>
                 <li>
                   <a class="text-gray-600 hover:text-gray-400 font-semibold block pb-2 text-sm" href="mailto:jadefashion.bisuteria@outlook.com">jadefashion.bisuteria@outlook.com</a>

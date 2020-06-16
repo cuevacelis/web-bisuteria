@@ -20,7 +20,7 @@
         </span>
 
         <nuxt-link :to="'/productos/'+productos.Categoria">
-          <span>
+          <span class="text-blue-600">
             Ver más
           </span>
         </nuxt-link>

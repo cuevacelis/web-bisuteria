@@ -1,5 +1,5 @@
 <template>
-  <header class="mi-navbar fixed px-6 border-b border-gray-800 shadow-md inset-x-0 sm:flex items-center sm:justify-between md:justify-start">
+  <header class="mi-navbar bg-white fixed px-6 border-b border-gray-400 shadow-xl inset-x-0 sm:flex items-center sm:justify-between md:justify-start">
     <section class="navbar_principal">
       <div class="flex items-center justify-between">
         <section class="logo flex content-center items-center pr-4 lg:pr-8">
@@ -12,7 +12,7 @@
                 alt="logo"
                 loading="lazy"
               >
-              <span class="text-3xl text-gray-400 font-semibold">Jade Fashion</span>
+              <span class="text-3xl text-gray-800 font-semibold">Jade Fashion</span>
             </nuxt-link>
           </button>
         </section>
@@ -27,18 +27,18 @@
       </div>
     </section>
     <nav :class="isOpenSubMenu ? 'block' : 'hidden'" class="pt-2 pb-4 sm:flex sm:p-0">
-      <button class="block pr-2 py-1" @click="isOpenSubMenu = false">
-        <nuxt-link class="text-lg text-gray-600" to="/productos">
+      <button class="block" @click="isOpenSubMenu = false">
+        <nuxt-link class="block text-lg text-gray-700 pr-2 py-1" to="/productos">
           Productos
         </nuxt-link>
       </button>
-      <button class="block pr-2 py-1" @click="isOpenSubMenu = false">
-        <nuxt-link class="text-lg text-gray-600" to="/promociones">
+      <button class="block" @click="isOpenSubMenu = false">
+        <nuxt-link class="block text-lg text-gray-700 pr-2 py-1" to="/promociones">
           Promociones
         </nuxt-link>
       </button>
-      <button class="block pr-2 py-1" @click="isOpenSubMenu = false">
-        <nuxt-link class="text-lg text-gray-600" to="/about">
+      <button class="block" @click="isOpenSubMenu = false">
+        <nuxt-link class="block text-lg text-gray-700 pr-2 py-1" to="/about">
           ¿Quienes Somos?
         </nuxt-link>
       </button>
@@ -63,8 +63,5 @@ export default {
 <style scoped>
 .mi-navbar{
   z-index: 3;
-  background-color: #121213;
-  font-size: 14px;
-  line-height: 30px;
 }
 </style>
