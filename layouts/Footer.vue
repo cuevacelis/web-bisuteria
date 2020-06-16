@@ -15,14 +15,13 @@
             <a href="https://www.facebook.com/JadeFashion-681097335352434" target="_blank">
               <i class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center" />
             </a>
-            <a href="https://www.dribbble.com/" target="_blank">
-              <i class="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center" />
-            </a>
-            <a href="https://www.github.com/" target="_blank">
+            <a href="https://github.com/cuevacelis/web-bisuteria" target="_blank">
               <i class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center" />
             </a>
           </div>
-        </div><div class="w-full md:w-6/12 px-4">
+        </div>
+
+        <div class="w-full md:w-6/12 px-4">
           <div class="flex flex-wrap items-top mb-6">
             <div class="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
               <span class="text-3xl text-gray-400 font-semibold">Ubícanos</span><ul class="list-unstyled">
@@ -39,7 +38,7 @@
             </div>
           </div>
         </div>
-      </div><hr class="my-6 border-gray-400">
+      </div>
     </div>
   </footer>
 </template>
@@ -52,11 +51,9 @@
   color: #d0d0d6;
 }
 .footer {
-  clear: both;
   background-color: #121213;
   padding: 27px 0 0;
   padding-bottom: 17px;
-  color: #a5a5aa;
   font-size: 14px;
   line-height: 30px;
 }

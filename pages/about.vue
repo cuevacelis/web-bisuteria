@@ -4,9 +4,9 @@
       <div>
         <div class="w-full sm:w-2/3 lg:w-1/2 z-10">
           <h1 class="text-3xl lg:text-4xl xl:text-5xl leading-tight font-bold">
-            Jade Fashion💎
+            Jade Fashion
           </h1>
-          <p class="text-base leading-snug text-gray-700 mt-4">
+          <p class="text-base leading-snug text-gray-700">
             En Jade Fashion creemos que todo el mundo .....
           </p>
         </div>

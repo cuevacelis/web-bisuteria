@@ -1,6 +1,6 @@
 <template>
   <section class="main bg-gray-200">
-    <section class="contenido_banner_principal">
+    <section class="contenido_slider_principal">
       <swiper class="slider swiper" :options="swiperOption">
         <swiper-slide class="slider slide-1">
           <div class="texto">

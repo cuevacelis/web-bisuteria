@@ -2,7 +2,7 @@
   <section class="contenido_web">
     <Header />
     <div class="contenido_principal">
-      <fade-transition :duration="800">
+      <fade-transition :duration="1000">
         <nuxt />
       </fade-transition>
     </div>
@@ -25,6 +25,6 @@ export default {
 
 <style>
 .contenido_principal{
-  padding-top: 65px;
+  padding-top: 60px;
 }
 </style>

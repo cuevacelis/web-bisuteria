@@ -1,18 +1,18 @@
 <template>
-  <header class="mi-navbar fixed bg-white px-6 border-b border-gray-200 shadow-md inset-x-0 sm:flex items-center sm:justify-between md:justify-start">
+  <header class="mi-navbar fixed px-6 border-b border-gray-800 shadow-md inset-x-0 sm:flex items-center sm:justify-between md:justify-start">
     <section class="navbar_principal">
       <div class="flex items-center justify-between">
-        <section class="logo items-center pr-6 lg:pr-8">
+        <section class="logo flex content-center items-center pr-4 lg:pr-8">
           <button @click="isOpenSubMenu = false">
             <nuxt-link class="flex items-center" to="/">
               <img
-                src="/images/logo1-min.png"
-                width="60"
-                height="60"
+                src="/svg/diamond-4.svg"
+                style="width:60px;height:60px"
+                class="py-2"
                 alt="logo"
                 loading="lazy"
               >
-              <span class="text-2xl text-gray-800">Jade Fashion</span>
+              <span class="text-3xl text-gray-400 font-semibold">Jade Fashion</span>
             </nuxt-link>
           </button>
         </section>
@@ -27,18 +27,18 @@
       </div>
     </section>
     <nav :class="isOpenSubMenu ? 'block' : 'hidden'" class="pt-2 pb-4 sm:flex sm:p-0">
-      <button class="block" @click="isOpenSubMenu = false">
-        <nuxt-link class="text-gray-700 px-2 py-2" to="/productos">
+      <button class="block pr-2 py-1" @click="isOpenSubMenu = false">
+        <nuxt-link class="text-lg text-gray-600" to="/productos">
           Productos
         </nuxt-link>
       </button>
-      <button class="block" @click="isOpenSubMenu = false">
-        <nuxt-link class="block text-gray-700 px-2 py-2" to="/promociones">
+      <button class="block pr-2 py-1" @click="isOpenSubMenu = false">
+        <nuxt-link class="text-lg text-gray-600" to="/promociones">
           Promociones
         </nuxt-link>
       </button>
-      <button class="block" @click="isOpenSubMenu = false">
-        <nuxt-link class="text-gray-700 px-2 py-2" to="/about">
+      <button class="block pr-2 py-1" @click="isOpenSubMenu = false">
+        <nuxt-link class="text-lg text-gray-600" to="/about">
           ¿Quienes Somos?
         </nuxt-link>
       </button>
@@ -63,5 +63,8 @@ export default {
 <style scoped>
 .mi-navbar{
   z-index: 3;
+  background-color: #121213;
+  font-size: 14px;
+  line-height: 30px;
 }
 </style>
