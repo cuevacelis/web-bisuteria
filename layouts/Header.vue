@@ -1,8 +1,8 @@
 <template>
-  <header class="mi-navbar fixed bg-white px-6 border-b border-gray-200 shadow-md inset-x-0 sm:flex sm:justify-between sm:items-center items-center">
+  <header class="mi-navbar fixed bg-white px-6 border-b border-gray-200 shadow-md inset-x-0 sm:flex items-center">
     <section class="navbar_principal">
       <div class="flex items-center justify-between">
-        <section class="logo items-center">
+        <section class="logo items-center pr-6 lg:pr-8">
           <button @click="isOpenSubMenu = false">
             <nuxt-link class="flex items-center" to="/">
               <img
