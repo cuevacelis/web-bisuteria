@@ -1,27 +1,45 @@
 <template>
   <footer class="footer">
-    <div class="container">
-      <div class="flex-1">
-        <div class="row-auto flex mb-4">
-          <div class="flex-1 pl-6">
-            <h3>REDES SOCIALES</h3>
-            <ul class="social">
-              <li><a class="link__footer" href="https://www.facebook.com/JadeFashion-681097335352434"><span class="ico ico-fb" />FACEBOOK</a></li>
-            </ul>
+    <div class="container mx-auto px-4">
+      <div class="flex flex-wrap">
+        <div class="w-full md:w-6/12 px-4">
+          <h4 class="text-3xl text-gray-400 font-semibold">
+            Mantengámonos en contacto!
+          </h4>
+          <h5 class="text-lg mt-0 mb-2 text-gray-600">
+            Encuéntranos en cualquiera de estas plataformas, respondemos 1-2 días hábiles.
+          </h5><div class="mt-6">
+            <a href="https://www.twitter.com/" target="_blank">
+              <i class="fab fa-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center" />
+            </a>
+            <a href="https://www.facebook.com/JadeFashion-681097335352434" target="_blank">
+              <i class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center" />
+            </a>
+            <a href="https://www.dribbble.com/" target="_blank">
+              <i class="fab fa-dribbble bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center" />
+            </a>
+            <a href="https://www.github.com/" target="_blank">
+              <i class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center" />
+            </a>
           </div>
-
-          <div class="flex-1">
-            <h3>CONTACTENOS</h3>
-            <div class="col contact">
-              <p>
-                JADE FASHION.<br>PLAZA DE TOROS,TRUJILLO<br>PERÚ<br>
-                <span class="ico ico-ph" /><a class="link__footer" href="https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20quiero%20más%20información%20porfavor!!">(+51) 983 475 092</a>
-                <span class="ico ico-em" /><a class="link__footer" href="mailto:jadefashion.bisuteria@outlook.com">jadefashion.bisuteria@outlook.com</a>
-              </p>
+        </div><div class="w-full md:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <div class="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
+              <span class="text-3xl text-gray-400 font-semibold">Ubícanos</span><ul class="list-unstyled">
+                <li>
+                  <a class="text-gray-600 hover:text-gray-400 font-semibold block pb-2 text-sm" href="https://goo.gl/maps/pTZSvLvRw7m8LcfSA" target="_blank">Plaza de Toros, Trujillo-PE</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-400 font-semibold block pb-2 text-sm" href="https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20quiero%20más%20información%20porfavor!!">(+51) 983 475 092</a>
+                </li>
+                <li>
+                  <a class="text-gray-600 hover:text-gray-400 font-semibold block pb-2 text-sm" href="mailto:jadefashion.bisuteria@outlook.com">jadefashion.bisuteria@outlook.com</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-      </div>
+      </div><hr class="my-6 border-gray-400">
     </div>
   </footer>
 </template>

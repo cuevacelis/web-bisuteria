@@ -1,5 +1,5 @@
 <template>
-  <header class="mi-navbar fixed bg-white px-6 border-b border-gray-200 shadow-md inset-x-0 sm:flex items-center">
+  <header class="mi-navbar fixed bg-white px-6 border-b border-gray-200 shadow-md inset-x-0 sm:flex items-center sm:justify-between md:justify-start">
     <section class="navbar_principal">
       <div class="flex items-center justify-between">
         <section class="logo items-center pr-6 lg:pr-8">
