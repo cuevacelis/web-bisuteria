@@ -4,7 +4,7 @@
       <div class="">
         <h1>Productos</h1>
         <p class="lead text-muted">
-          Encuentra todo tipo de bisuteria y al mejor precio 💰.
+          Todos los productos de Joyeria en un solo lugar y al mejor precio. 💰
         </p>
       </div>
     </section>

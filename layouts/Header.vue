@@ -11,7 +11,7 @@
                 class="py-2"
                 alt="logo"
               >
-              <span class="text-2xl text-gray-800 font-semibold">Jade Fashion</span>
+              <span class="text-xl font-bold text-gray-800">JadeFashion</span>
             </nuxt-link>
           </button>
         </section>
@@ -25,19 +25,19 @@
         </section>
       </div>
     </section>
-    <nav :class="isOpenSubMenu ? 'block' : 'hidden'" class="pt-2 pb-4 sm:flex sm:p-0">
+    <nav :class="isOpenSubMenu ? 'block' : 'hidden'" class="text-base  text-gray-700 pt-2 pb-4 sm:flex sm:p-0">
       <button class="block" @click="isOpenSubMenu = false">
-        <nuxt-link class="block text-lg text-gray-700 pr-2 py-1" to="/productos">
+        <nuxt-link class="block pr-2 py-1" to="/productos">
           Productos
         </nuxt-link>
       </button>
       <button class="block" @click="isOpenSubMenu = false">
-        <nuxt-link class="block text-lg text-gray-700 pr-2 py-1" to="/promociones">
+        <nuxt-link class="block pr-2 py-1" to="/promociones">
           Promociones
         </nuxt-link>
       </button>
       <button class="block" @click="isOpenSubMenu = false">
-        <nuxt-link class="block text-lg text-gray-700 pr-2 py-1" to="/about">
+        <nuxt-link class="block pr-2 py-1" to="/about">
           ¿Quienes Somos?
         </nuxt-link>
       </button>
