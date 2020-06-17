@@ -51,7 +51,7 @@ export default {
   ** Complementos para cargar antes de montar la aplicación
   */
   plugins: [
-    { src: '@/plugins/vue-awesome-swiper', mode: 'client' }
+    { src: '@/plugins/vue-awesome-swiper', mode: 'server' }
     // { src: '@/plugins/vue-progressive-image', mode: 'client' }
   ],
   /*
