@@ -192,13 +192,13 @@ export default {
   background-position: center;
 }
 .slide-1 {
-  background-image: url('/images/01.jpg');
+  /*background-image: url('/images/01.jpg');*/
 }
 .slide-2 {
-  background-image: url('/images/0.jpg');
+  /*background-image: url('/images/0.jpg');*/
 }
 .slide-3 {
-  background-image: url('https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/12924604_873954492733383_4881558672356992178_n.jpg?_nc_cat=105&_nc_sid=8bfeb9&_nc_eui2=AeHSWEeZxxzH2wYLyIGpUG2aZjFAI2btqpZmMUAjZu2qluNXb5KY7G8JOfVuI_P2WsOakuhVBvYKXFVmOcf1tvUD&_nc_ohc=yaAj9CSHUgoAX8uxLLQ&_nc_ht=scontent.ftru2-1.fna&oh=8f81ac733c9d1a350d225679fe5511e3&oe=5EEB5A2B');
+  /*background-image: url('https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/12924604_873954492733383_4881558672356992178_n.jpg?_nc_cat=105&_nc_sid=8bfeb9&_nc_eui2=AeHSWEeZxxzH2wYLyIGpUG2aZjFAI2btqpZmMUAjZu2qluNXb5KY7G8JOfVuI_P2WsOakuhVBvYKXFVmOcf1tvUD&_nc_ohc=yaAj9CSHUgoAX8uxLLQ&_nc_ht=scontent.ftru2-1.fna&oh=8f81ac733c9d1a350d225679fe5511e3&oe=5EEB5A2B');*/
 }
 .swiper {
   width: 100%;
@@ -211,7 +211,7 @@ export default {
     color: white;
     box-sizing: border-box;
     padding: 0 80px;
-    background-color: transparent;
+    background: #444;
     .texto {
       padding-top: 40px;
       .title {
