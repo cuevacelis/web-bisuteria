@@ -11,7 +11,7 @@
                 class="py-2"
                 alt="logo"
               >
-              <span class="text-3xl text-gray-800 font-semibold">Jade Fashion</span>
+              <span class="text-2xl text-gray-800 font-semibold">Jade Fashion</span>
             </nuxt-link>
           </button>
         </section>
