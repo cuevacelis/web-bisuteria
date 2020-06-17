@@ -15,6 +15,32 @@
             </nuxt-link>
           </div>
         </swiper-slide>
+        <swiper-slide class="slider slide-2">
+          <div class="texto">
+            <div class="title">
+              HAZ TU VIDA MEJOR
+            </div>
+            <div class="subtitle">
+              JOYAS GENUINAS
+            </div>
+            <nuxt-link type="button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" to="/productos">
+              VER JOYAS
+            </nuxt-link>
+          </div>
+        </swiper-slide>
+        <swiper-slide class="slider slide-3">
+          <div class="texto">
+            <div class="title">
+              COLLARES
+            </div>
+            <div class="subtitle">
+              COLLAR VIRGEN DE LA PUERTA
+            </div>
+            <nuxt-link type="button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" to="/productos">
+              VER COLLARES
+            </nuxt-link>
+          </div>
+        </swiper-slide>
         <div slot="button-prev" class="swiper-button-prev swiper-button-white" />
         <div slot="button-next" class="swiper-button-next swiper-button-white" />
       </swiper>
