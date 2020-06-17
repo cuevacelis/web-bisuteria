@@ -1,7 +1,7 @@
 <template>
   <section class="main bg-gray-200">
     <section class="contenido_slider_principal">
-      <swiper class="swiper" :options="swiperOption">
+      <swiper ref="mySwiper" class="swiper_principal" :options="swiperOption">
         <swiper-slide v-for="dataSwiper in dataSwipers.informacion" :key="dataSwiper.id" class="slider" :style="'background-image:url('+dataSwiper.img+')'">
           <div class="texto">
             <div class="title">
@@ -184,6 +184,15 @@ export default {
         ]
       }
     }
+  },
+  computed: {
+    swiper () {
+      return this.$refs.mySwiper.$swiper
+    }
+  },
+  mounted () {
+    console.log('Current Swiper instance object', this.swiper)
+    this.swiper.slideTo(3, 1000, false)
   }
 }
 </script>
@@ -202,7 +211,7 @@ export default {
 .slide-3 {
   background-image: url('https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/12924604_873954492733383_4881558672356992178_n.jpg?_nc_cat=105&_nc_sid=8bfeb9&_nc_eui2=AeHSWEeZxxzH2wYLyIGpUG2aZjFAI2btqpZmMUAjZu2qluNXb5KY7G8JOfVuI_P2WsOakuhVBvYKXFVmOcf1tvUD&_nc_ohc=yaAj9CSHUgoAX8uxLLQ&_nc_ht=scontent.ftru2-1.fna&oh=8f81ac733c9d1a350d225679fe5511e3&oe=5EEB5A2B');
 }
-.swiper {
+.swiper_principal {
   width: 100%;
   height: 570px;
   .swiper-slide {
