@@ -2,42 +2,16 @@
   <section class="main bg-gray-200">
     <section class="contenido_slider_principal">
       <swiper class="swiper" :options="swiperOption">
-        <swiper-slide class="slider slide-1">
+        <swiper-slide v-for="dataSwiper in dataSwipers.informacion" :key="dataSwiper.id" class="slider" :style="'background-image:url('+dataSwiper.img+')'">
           <div class="texto">
             <div class="title">
-              ELLA DIRA "SÍ"
+              {{ dataSwiper.titulo }}
             </div>
             <div class="subtitle">
-              ANILLO DE COMPROMISO
+              {{ dataSwiper.subtitulo }}
             </div>
-            <nuxt-link type="button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" to="/productos">
-              VER ANILLOS
-            </nuxt-link>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="slider slide-2">
-          <div class="texto">
-            <div class="title">
-              HAZ TU VIDA MEJOR
-            </div>
-            <div class="subtitle">
-              JOYAS GENUINAS
-            </div>
-            <nuxt-link type="button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" to="/productos">
-              VER JOYAS
-            </nuxt-link>
-          </div>
-        </swiper-slide>
-        <swiper-slide class="slider slide-3">
-          <div class="texto">
-            <div class="title">
-              COLLARES
-            </div>
-            <div class="subtitle">
-              COLLAR VIRGEN DE LA PUERTA
-            </div>
-            <nuxt-link type="button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" to="/productos">
-              VER COLLARES
+            <nuxt-link type="button" class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow" :to="dataSwiper.urlButton">
+              {{ dataSwiper.textoButton }}
             </nuxt-link>
           </div>
         </swiper-slide>
@@ -167,10 +141,10 @@ export default {
     return {
       swiperOption: {
         speed: 600,
-        autoplay: {
+        /* autoplay: {
           delay: 1640,
           disableOnInteraction: false
-        },
+        }, */
         loop: true,
         navigation: {
           nextEl: '.swiper-button-next',
@@ -180,6 +154,34 @@ export default {
           prevSlideMessage: 'Anterior Diapositiva',
           nextSlideMessage: 'Siguiente Diapositiva'
         }
+      },
+      dataSwipers: {
+        informacion: [
+          {
+            id: '1',
+            img: '/images/01.jpg',
+            titulo: 'ELLA DIRA "SÍ"',
+            subtitulo: 'ANILLO DE COMPROMISO',
+            textoButton: 'VER ANILLOS',
+            urlButton: '/productos'
+          },
+          {
+            id: '2',
+            img: '/images/0.jpg',
+            titulo: 'HAZ TU VIDA MEJOR',
+            subtitulo: 'JOYAS GENUINAS',
+            textoButton: 'VER JOYAS',
+            urlButton: '/productos'
+          },
+          {
+            id: '3',
+            img: 'https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/12924604_873954492733383_4881558672356992178_n.jpg?_nc_cat=105&_nc_sid=8bfeb9&_nc_eui2=AeHSWEeZxxzH2wYLyIGpUG2aZjFAI2btqpZmMUAjZu2qluNXb5KY7G8JOfVuI_P2WsOakuhVBvYKXFVmOcf1tvUD&_nc_ohc=yaAj9CSHUgoAX8uxLLQ&_nc_ht=scontent.ftru2-1.fna&oh=8f81ac733c9d1a350d225679fe5511e3&oe=5EEB5A2B',
+            titulo: 'COLLARES',
+            subtitulo: 'COLLAR VIRGEN DE LA PUERTA',
+            textoButton: 'VER COLLARES',
+            urlButton: '/productos'
+          }
+        ]
       }
     }
   }
