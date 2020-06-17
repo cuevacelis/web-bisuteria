@@ -19,13 +19,13 @@ export default {
       { name: 'robots', content: 'index' }
     ],
     noscript: [
-      { innerHTML: 'Necesitas Usar un Navegador Mas Moderno :)', body: true }
+      { innerHTML: 'Gracias por Visitar a JadeFashon, actualiza tu navegador para JavaScript', body: true }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: 'https://kit.fontawesome.com/a076d05399.js', async: true }
+      { src: 'https://kit.fontawesome.com/a076d05399.js', defer: true }
     ]
   },
   /*
