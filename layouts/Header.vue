@@ -10,7 +10,6 @@
                 style="width:60px;height:60px"
                 class="py-2"
                 alt="logo"
-                loading="lazy"
               >
               <span class="text-3xl text-gray-800 font-semibold">Jade Fashion</span>
             </nuxt-link>
