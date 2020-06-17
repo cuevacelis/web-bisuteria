@@ -1,7 +1,7 @@
 <template>
   <section class="main bg-gray-200">
     <section class="contenido_slider_principal">
-      <swiper class="slider swiper" :options="swiperOption">
+      <swiper class="swiper" :options="swiperOption">
         <swiper-slide class="slider slide-1">
           <div class="texto">
             <div class="title">
@@ -156,6 +156,7 @@
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
+
 export default {
   name: 'PaginaPrincipal',
   components: {
@@ -167,7 +168,7 @@ export default {
       swiperOption: {
         speed: 600,
         autoplay: {
-          delay: 1600,
+          delay: 1640,
           disableOnInteraction: false
         },
         loop: true,
@@ -186,13 +187,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.subtitulo{
-  text-align: center;
-}
 .slider {
-  left: 0;
-  top: 0;
-  vertical-align: text-top;
   background-size: cover;
   background-position: center;
 }
@@ -205,11 +200,9 @@ export default {
 .slide-3 {
   background-image: url('https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/12924604_873954492733383_4881558672356992178_n.jpg?_nc_cat=105&_nc_sid=8bfeb9&_nc_eui2=AeHSWEeZxxzH2wYLyIGpUG2aZjFAI2btqpZmMUAjZu2qluNXb5KY7G8JOfVuI_P2WsOakuhVBvYKXFVmOcf1tvUD&_nc_ohc=yaAj9CSHUgoAX8uxLLQ&_nc_ht=scontent.ftru2-1.fna&oh=8f81ac733c9d1a350d225679fe5511e3&oe=5EEB5A2B');
 }
-
 .swiper {
   width: 100%;
   height: 570px;
-
   .swiper-slide {
     display: flex;
     flex-direction: column;
@@ -230,7 +223,6 @@ export default {
         line-height: 28px;
         padding-bottom: 15px;
       }
-
       .subtitle {
         font-family: Novecentowide;
         color: #fff;
@@ -240,7 +232,6 @@ export default {
         font-weight: 300;
         margin-bottom: 1rem;
       }
-
       .text {
         max-width: 430px;
         line-height: 1.32;
