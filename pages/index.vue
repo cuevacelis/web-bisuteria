@@ -141,10 +141,10 @@ export default {
     return {
       swiperOption: {
         speed: 600,
-        /* autoplay: {
+        autoplay: {
           delay: 1640,
           disableOnInteraction: false
-        }, */
+        },
         loop: true,
         navigation: {
           nextEl: '.swiper-button-next',
