@@ -30,6 +30,7 @@
           </span>
         </div>
       </section>
+      <br>
 
       <section class="banner_informativo flex justify-center">
         <div class="bg-blue-100 border-t-4 border-blue-600 rounded-b text-teal-900 px-2 py-3 shadow-md" role="alert">
