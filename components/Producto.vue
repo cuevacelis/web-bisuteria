@@ -27,9 +27,7 @@
         <swiper class="swiper" :options="swiperOption">
           <swiper-slide v-for="producto in productos.Articulos" :key="producto.id">
             <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
-              <figure class="figure__slider">
-                <img :src="producto.urlImagen" class="imagen__slider" loading="lazy">
-              </figure>
+              <img :src="producto.urlImagen">
               <p class="texto__slider">
                 {{ producto.nombreProducto }}
               </p>
@@ -113,14 +111,6 @@ export default {
 </script>
 
 <style>
-.imagen__slider{
-  width: 100%;
-  max-height: 280px;
-}
-.imagen__preload{
-  justify-content: center;
-  align-items: center;
-}
 .titulo__slider{
   color: #444;
   font-weight: 400;
