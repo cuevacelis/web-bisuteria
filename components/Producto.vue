@@ -106,7 +106,13 @@ export default {
         }
       }
     }
-  }
+  },
+  activated () {
+    if (this.$fetchState.timestamp <= (Date.now() - 600000)) {
+      this.$fetch()
+    }
+  },
+  fetchOnServer: false
 }
 </script>
 

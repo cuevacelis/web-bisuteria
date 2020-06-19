@@ -1,5 +1,5 @@
 <template>
-  <section class="contenido-productos px-2 py-2">
+  <section class="contenido-productos">
     <section class="texto-principal-productos text-center">
       <div class="">
         <h1>Productos</h1>
