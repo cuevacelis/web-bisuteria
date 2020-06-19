@@ -36,21 +36,6 @@
       "id":"7",
       "nombreProducto": "Arete7", 
       "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes7.jpg" 
-    },
-    { 
-      "id":"8",
-      "nombreProducto": "Arete7", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes8.jpg" 
-    },
-    { 
-      "id":"9",
-      "nombreProducto": "Arete7", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes9.jpg" 
-    },
-    { 
-      "id":"10",
-      "nombreProducto": "Arete7", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes10.jpg" 
     }
   ]
 }
