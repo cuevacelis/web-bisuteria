@@ -23,7 +23,7 @@
 
         <div class="w-full md:w-6/12 px-4">
           <div class="flex flex-wrap items-top mb-6">
-            <div class="w-full md:w-6/12 xl:w-4/12 pt-6 md:pt-0 md:px-4 ml-auto">
+            <div class="w-full pt-6 md:pt-0 md:px-4 ml-auto">
               <span class="text-3xl text-gray-400 font-semibold">Ubícanos</span><ul class="list-unstyled">
                 <li>
                   <a class="text-gray-600 hover:text-gray-400 font-semibold block pb-2 text-sm" href="https://goo.gl/maps/pTZSvLvRw7m8LcfSA" target="_blank">Plaza de Toros, Trujillo-PE</a>
