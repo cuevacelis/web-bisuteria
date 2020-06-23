@@ -161,15 +161,15 @@ export default {
             subtitulo: 'JOYAS GENUINAS',
             textoButton: 'VER JOYAS',
             urlButton: '/productos'
-          },
-          {
+          }
+          /* {
             id: '3',
             img: 'https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/12924604_873954492733383_4881558672356992178_n.jpg?_nc_cat=105&_nc_sid=8bfeb9&_nc_eui2=AeHSWEeZxxzH2wYLyIGpUG2aZjFAI2btqpZmMUAjZu2qluNXb5KY7G8JOfVuI_P2WsOakuhVBvYKXFVmOcf1tvUD&_nc_ohc=6NGsAB48oGsAX8475QI&_nc_ht=scontent.ftru2-1.fna&oh=4e5d4d3190c56b806cb67af29f00d971&oe=5F12E72B',
             titulo: 'COLLARES',
             subtitulo: 'COLLAR VIRGEN DE LA PUERTA',
             textoButton: 'VER COLLARES',
             urlButton: '/productos'
-          }
+          } */
         ]
       }
     }
@@ -181,15 +181,6 @@ export default {
 .slider {
   background-size: cover;
   background-position: center;
-}
-.slide-1 {
-  background-image: url('/images/01.jpg');
-}
-.slide-2 {
-  background-image: url('/images/0.jpg');
-}
-.slide-3 {
-  background-image: url('https://scontent.ftru2-1.fna.fbcdn.net/v/t1.0-9/12924604_873954492733383_4881558672356992178_n.jpg?_nc_cat=105&_nc_sid=8bfeb9&_nc_eui2=AeHSWEeZxxzH2wYLyIGpUG2aZjFAI2btqpZmMUAjZu2qluNXb5KY7G8JOfVuI_P2WsOakuhVBvYKXFVmOcf1tvUD&_nc_ohc=yaAj9CSHUgoAX8uxLLQ&_nc_ht=scontent.ftru2-1.fna&oh=8f81ac733c9d1a350d225679fe5511e3&oe=5EEB5A2B');
 }
 .swiper {
   width: 100%;
