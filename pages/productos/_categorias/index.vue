@@ -8,42 +8,31 @@
       <ErrorDeComponents :error="$fetchState.error.message " />
     </section>
 
-    <section v-else :class="productos.Categoria + ' jumbotron'">
-      <section class="texto-principal text-center">
-        <div class="container">
-          <h1 class="titulo">
-            {{ productos.Categoria }}
-          </h1>
-        </div>
-        <section :class="productos.Categoria">
-          <ul class="Producto">
-            <div class="">
-              <div class="row">
-                <div v-for="producto in productos.Articulos" :key="producto.id" class="col-md-4">
-                  <div class="card mb-4 shadow-sm">
-                    <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
-                      <img :src="producto.urlImagen" class="card-img-top" style="width: 100%; display: block;">
-                    </nuxt-link>
-                    <div class="card-body">
-                      <p class="card-text">
-                        <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
-                          {{ producto.nombreProducto }}
-                        </nuxt-link>
-                      </p>
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div class="grupo-de-botones">
-                          <a type="button" class="" :href="'https://api.whatsapp.com/send?phone=51983475092&text=Hola!%20JadeFashion,%20deseo%20comprar%20el%20producto%20' + producto.nombreProducto + '%20,:)'">Comprar</a>
-                          <nuxt-link type="button" class="" :to="'/productos/'+ productos.Categoria + '/' + producto.id">
-                            Más Información
-                          </nuxt-link>
-                        </div>
-                      </div>
+    <section v-else :class="productos.Categoria">
+      <section class="Parte_Superior">
+        <h1 class="titulo text-center">
+          {{ productos.Categoria }}
+        </h1>
+      </section>
+      <section class="Contenido_Productos">
+        <section class="Lista flex flex-wrap">
+          <div v-for="producto in productos.Articulos" :key="producto.id" class="Card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6">
+            <div class="Card_Producto m-6">
+              <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
+                <div class="max-w-sm rounded overflow-hidden shadow-lg">
+                  <img class="w-full" :src="producto.urlImagen" alt="Sunset in the mountains">
+                  <div class="px-6 py-4">
+                    <div class="font-bold text-xl mb-2" :to="'/productos/'+ productos.Categoria + '/' + producto.id">
+                      {{ producto.nombreProducto }}
+                    </div>
+                    <div class="mt-5 border-t border-grey-light pt-2  text-xs text-grey hover:text-red uppercase no-underline tracking-wide">
+                      Más Información
                     </div>
                   </div>
                 </div>
-              </div>
+              </nuxt-link>
             </div>
-          </ul>
+          </div>
         </section>
       </section>
     </section>
@@ -79,9 +68,6 @@ export default {
 <style>
 .titulo{
   align-items: center;
-}
-.card{
-  border:3px solid rgba(0,0,0,.125);
 }
 .card-text{
   font-size: 25px;
