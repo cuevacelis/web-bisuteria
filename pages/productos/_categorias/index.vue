@@ -16,7 +16,7 @@
       </section>
       <section class="Contenido_Productos">
         <section class="Lista flex flex-wrap">
-          <div v-for="producto in productos.Articulos" :key="producto.id" class="Card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6">
+          <div v-for="producto in productos.Articulos" :key="producto.id" class="Card w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
             <div class="Card_Producto m-6">
               <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
                 <div class="max-w-sm rounded overflow-hidden shadow-lg">

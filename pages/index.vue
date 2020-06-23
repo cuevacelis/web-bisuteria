@@ -1,5 +1,5 @@
 <template>
-  <section class="main bg-gray-200">
+  <section class="main">
     <section class="contenido_slider_principal">
       <swiper class="swiper" :options="swiperOption">
         <swiper-slide v-for="dataSwiper in dataSwipers.informacion" :key="dataSwiper.id" class="slider" :style="'background-image:url('+dataSwiper.img+')'">
@@ -53,73 +53,51 @@
         </div>
       </section>
 
-      <section class="collares">
-        <section class="titulo">
-          <h1>Collares📿</h1>
+      <section class="collares m-4">
+        <section class="titulo mb-4">
+          <p class="text-lg font-bold">
+            Collares📿
+          </p>
         </section>
         <section class="productos_inicio flex flex-wrap">
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="contenido-producto p-2 m-2 bg-white shadow-lg">
-              <img
-                class="rounded-md"
-                src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
-                alt="anillo de trebol"
-                loading="lazy"
-              >
-              <h2 class="titulo_imagen">
-                Collares
-              </h2>
-              <p class="precio">
-                $50
-              </p>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mr-4 mb-4">
+              <img class="w-full" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9" alt="Producto" loading="lazy">
+              <div class="px-6 py-4">
+                <div class="text-xl mb-2 text-center">
+                  Collares $50
+                </div>
+              </div>
             </div>
           </section>
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="contenido-producto p-2 m-2 bg-white shadow-lg">
-              <img
-                class="rounded-md"
-                src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
-                alt="anillo de trebol"
-                loading="lazy"
-              >
-              <h2 class="titulo_imagen">
-                Collares
-              </h2>
-              <p class="precio">
-                $50
-              </p>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mr-4 mb-4">
+              <img class="w-full" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9" alt="Producto" loading="lazy">
+              <div class="px-6 py-4">
+                <div class="text-xl mb-2 text-center">
+                  Collares $50
+                </div>
+              </div>
             </div>
           </section>
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="contenido-producto p-2 m-2 bg-white shadow-lg">
-              <img
-                class="rounded-md"
-                src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
-                alt="anillo de trebol"
-                loading="lazy"
-              >
-              <h2 class="titulo_imagen">
-                Collares
-              </h2>
-              <p class="precio">
-                $50
-              </p>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mr-4 mb-4">
+              <img class="w-full" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9" alt="Producto" loading="lazy">
+              <div class="px-6 py-4">
+                <div class="text-xl mb-2 text-center">
+                  Collares $50
+                </div>
+              </div>
             </div>
           </section>
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="contenido-producto p-2 m-2 bg-white shadow-lg">
-              <img
-                class="rounded-md"
-                src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9"
-                alt="anillo de trebol"
-                loading="lazy"
-              >
-              <h2 class="titulo_imagen">
-                Collares
-              </h2>
-              <p class="precio">
-                $50
-              </p>
+            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mr-4 mb-4">
+              <img class="w-full" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9" alt="Producto" loading="lazy">
+              <div class="px-6 py-4">
+                <div class="text-xl mb-2 text-center">
+                  Collares $50
+                </div>
+              </div>
             </div>
           </section>
         </section>
@@ -215,7 +193,7 @@ export default {
 }
 .swiper {
   width: 100%;
-  height: 570px;
+  height: 500px;
   .swiper-slide {
     flex-direction: column;
     text-align: center;
