@@ -77,10 +77,6 @@ export default {
 </script>
 
 <style>
-.Producto{
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .titulo{
   align-items: center;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section class="Producto m-6 bg-white">
     <section v-if="$fetchState.pending" class="loading">
       <vcl-facebook :speed="2" :primary="'#B1AFAF'" :secondary="'#999'" />
     </section>
@@ -13,39 +13,42 @@
         </div>
       </div>
     </section>
-    <section v-else :class="productos.Tipo">
-      <div class="contenido__slider">
-        <span class="titulo__slider">
-          {{ productos.Categoria }}
-        </span>
-
-        <nuxt-link :to="'/productos/'+productos.Categoria">
-          <span class="text-blue-600">
-            Ver más
+    <section v-else :class="productos.Categoria">
+      <div class="Contenido_Producto">
+        <section class="Header_Producto">
+          <span class="titulo__slider">
+            {{ productos.Categoria }}
           </span>
-        </nuxt-link>
-        <swiper class="swiper" :options="swiperOption">
-          <swiper-slide v-for="producto in productos.Articulos" :key="producto.id">
-            <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
-              <img :src="producto.urlImagen">
-              <p class="texto__slider">
-                {{ producto.nombreProducto }}
-              </p>
-            </nuxt-link>
-          </swiper-slide>
-          <div slot="pagination" class="swiper-pagination" />
-          <div slot="button-prev" class="swiper-button-prev swiper-button-white" />
-          <div slot="button-next" class="swiper-button-next swiper-button-white" />
-        </swiper>
+          <nuxt-link :to="'/productos/'+productos.Categoria">
+            <span class="text-blue-600">
+              Ver más
+            </span>
+          </nuxt-link>
+        </section>
+        <section class="Body_Producto">
+          <swiper class="swiper" :options="swiperOption">
+            <swiper-slide v-for="producto in productos.Articulos" :key="producto.id">
+              <nuxt-link :to="'/productos/'+ productos.Categoria + '/' + producto.id">
+                <img :src="producto.urlImagen">
+                <p class="texto__slider">
+                  {{ producto.nombreProducto }}
+                </p>
+              </nuxt-link>
+            </swiper-slide>
+            <div slot="pagination" class="swiper-pagination" />
+            <div slot="button-prev" class="swiper-button-prev swiper-button-white" />
+            <div slot="button-next" class="swiper-button-next swiper-button-white" />
+          </swiper>
+        </section>
       </div>
     </section>
-    <div />
-  </div>
+  </section>
 </template>
 
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import { VclFacebook } from 'vue-content-loading'
+import 'swiper/css/swiper.css'
 
 export default {
   components: {
@@ -67,7 +70,7 @@ export default {
       url: 'https://web-bisuteria.now.sh',
       productos: [],
       swiperOption: {
-        // lazy: true,
+        lazy: true,
         loop: true,
         breakpoints: {
           200: {
@@ -107,6 +110,12 @@ export default {
       }
     }
   },
+  computed: {
+    reversedMessage () {
+      // `this` apunta a la instancia vm
+      return this.message.split('').reverse().join('')
+    }
+  },
   activated () {
     if (this.$fetchState.timestamp <= (Date.now() - 600000)) {
       this.$fetch()
@@ -117,6 +126,9 @@ export default {
 </script>
 
 <style>
+.swiper-slide {
+  text-align: center;
+}
 .titulo__slider{
   color: #444;
   font-weight: 400;
@@ -129,6 +141,5 @@ export default {
   margin: 5px 0 0;
   max-height: 36px;
   overflow: hidden;
-  text-align: center
 }
 </style>

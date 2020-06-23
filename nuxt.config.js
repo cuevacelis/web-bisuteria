@@ -42,8 +42,7 @@ export default {
   ** CSS global
   */
   css: [
-    'normalize.css/normalize.css',
-    '@/assets/css/style.css'
+    'normalize.css/normalize.css'
   ],
   styleResources: {
   },

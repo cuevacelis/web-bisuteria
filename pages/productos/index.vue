@@ -9,7 +9,7 @@
       </div>
     </section>
     <section class="Productos">
-      <Producto class="Producto" tipo="Aretes" />
+      <Producto tipo="Aretes" />
     </section>
   </section>
 </template>
@@ -35,10 +35,4 @@ export default {
 </script>
 
 <style>
-.Producto{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  background-color: white;
-}
 </style>
