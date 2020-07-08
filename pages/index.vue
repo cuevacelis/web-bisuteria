@@ -79,9 +79,9 @@
 
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
             <div class="producto mr-4 mb-8">
-              <div class="principal-img w-64 h-64">
+              <div class="principal-img">
                 <div class="shadow w-64 h-64" />
-                <img class="w-full max-w-sm rounded-md" src="https://ae01.alicdn.com/kf/Hdc7e873316364fa3b4ffae0e912f5e703/Women-Classic-Quartz-Wrist-Watch-Rhombus-Head-Frosted-PU-Leather-Band-Casual-Watch-H9.jpg_220x220xz.jpg_.webp" alt="Producto" loading="lazy">
+                <img class="max-w-sm rounded-md w-64 h-64" src="https://ae01.alicdn.com/kf/Hdc7e873316364fa3b4ffae0e912f5e703/Women-Classic-Quartz-Wrist-Watch-Rhombus-Head-Frosted-PU-Leather-Band-Casual-Watch-H9.jpg_220x220xz.jpg_.webp" alt="Producto" loading="lazy">
               </div>
               <div class="footer-img">
                 <div class="font-semibold text-xl mb-2 pt-2">
@@ -96,9 +96,9 @@
 
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
             <div class="producto mr-4 mb-8">
-              <div class="principal-img w-64 h-64">
+              <div class="principal-img">
                 <div class="shadow w-64 h-64" />
-                <img class="w-full max-w-sm rounded-md" src="https://ae01.alicdn.com/kf/Hcd8a89a0f11645d38e8b0b2a24b8787dH/Classic-Women-s-Casual-Quartz-Leather-Band-Strap-Watch-Round-Analog-Clock-Wrist-Watches.jpg_220x220xz.jpg_.webp" alt="Producto" loading="lazy">
+                <img class="max-w-sm rounded-md w-64 h-64" src="https://ae01.alicdn.com/kf/Hcd8a89a0f11645d38e8b0b2a24b8787dH/Classic-Women-s-Casual-Quartz-Leather-Band-Strap-Watch-Round-Analog-Clock-Wrist-Watches.jpg_220x220xz.jpg_.webp" alt="Producto" loading="lazy">
               </div>
               <div class="footer-img">
                 <div class="font-semibold text-xl mb-2 pt-2">
@@ -106,6 +106,23 @@
                 </div>
                 <div class="mb-2 ">
                   Reloj clásico informal
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
+            <div class="producto mr-4 mb-8">
+              <div class="principal-img">
+                <div class="shadow w-64 h-64" />
+                <img class="max-w-sm rounded-md w-64 h-64" src="https://ae01.alicdn.com/kf/H20da08934ac44346bab09f154cd14f124/Princess-Elsa-Children-Watches-Kids-Spiderman-Colorful-Light-Source-Boys-Watch-Girls-Party-Gift-Clock-Wrist.jpg_220x220xz.jpg_.webp" alt="Producto" loading="lazy">
+              </div>
+              <div class="footer-img">
+                <div class="font-semibold text-xl mb-2 pt-2">
+                  PEN 6,48
+                </div>
+                <div class="mb-2 ">
+                  Relojes de princesa Elsa para niñas
                 </div>
               </div>
             </div>

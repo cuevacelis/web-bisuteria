@@ -31,11 +31,11 @@
           Productos
         </nuxt-link>
       </button>
-      <button class="block" @click="isOpenSubMenu = false">
+      <!--<button class="block" @click="isOpenSubMenu = false">
         <nuxt-link class="block pr-2 py-1" to="/promociones">
           Promociones
         </nuxt-link>
-      </button>
+      </button>-->
       <button class="block" @click="isOpenSubMenu = false">
         <nuxt-link class="block pr-2 py-1" to="/about">
           ¿Quienes Somos?
