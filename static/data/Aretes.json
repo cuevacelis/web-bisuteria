@@ -5,22 +5,22 @@
     { 
       "id":"1",
       "nombreProducto": "Aretes de Perla", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes1.jpg" 
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes1.jpg" 
     },
     { 
       "id":"2",
       "nombreProducto": "Arete2", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes2.jpg" 
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes2.jpg" 
     },
     { 
       "id":"3",
       "nombreProducto": "Arete3", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes3.jpg" 
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes3.jpg" 
     },
     { 
       "id":"4",
       "nombreProducto": "Arete4", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes4.jpg" 
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes4.jpg" 
     },
     { 
       "id":"5",
@@ -30,12 +30,12 @@
     { 
       "id":"6",
       "nombreProducto": "Arete6", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes6.jpg" 
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes6.jpg" 
     },
     { 
       "id":"7",
       "nombreProducto": "Arete7", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes7.jpg" 
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes7.jpg" 
     }
   ]
 }

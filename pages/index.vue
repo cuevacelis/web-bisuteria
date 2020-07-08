@@ -55,47 +55,57 @@
 
       <section class="collares m-4">
         <section class="titulo mb-4">
-          <p class="text-lg font-bold">
-            Collares📿
+          <p class="text-lg text-3xl font-semibold">
+            Relojes
           </p>
         </section>
         <section class="productos_inicio flex flex-wrap">
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mr-4 mb-4">
-              <img class="w-full" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9" alt="Producto" loading="lazy">
-              <div class="px-6 py-4">
-                <div class="text-xl mb-2 text-center">
-                  Collares $50
+            <div class="producto mr-4 mb-8">
+              <div class="principal-img w-64 h-64">
+                <div class="shadow w-64 h-64" />
+                <img class="w-full max-w-sm rounded-md" src="http://ae01.alicdn.com/kf/H9c06364bc49143aaa4a01ca8920da3453.jpg_350x350.jpg_.webp" alt="Producto" loading="lazy">
+              </div>
+              <div class="footer-img">
+                <div class="font-semibold text-xl mb-2 pt-2">
+                  PEN 17,33
+                </div>
+                <div class="mb-2 ">
+                  Reloj Inteligente
                 </div>
               </div>
             </div>
           </section>
+
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mr-4 mb-4">
-              <img class="w-full" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9" alt="Producto" loading="lazy">
-              <div class="px-6 py-4">
-                <div class="text-xl mb-2 text-center">
-                  Collares $50
+            <div class="producto mr-4 mb-8">
+              <div class="principal-img w-64 h-64">
+                <div class="shadow w-64 h-64" />
+                <img class="w-full max-w-sm rounded-md" src="https://ae01.alicdn.com/kf/Hdc7e873316364fa3b4ffae0e912f5e703/Women-Classic-Quartz-Wrist-Watch-Rhombus-Head-Frosted-PU-Leather-Band-Casual-Watch-H9.jpg_220x220xz.jpg_.webp" alt="Producto" loading="lazy">
+              </div>
+              <div class="footer-img">
+                <div class="font-semibold text-xl mb-2 pt-2">
+                  PEN 10
+                </div>
+                <div class="mb-2 ">
+                  Reloj de Pulsera Clasico
                 </div>
               </div>
             </div>
           </section>
+
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mr-4 mb-4">
-              <img class="w-full" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9" alt="Producto" loading="lazy">
-              <div class="px-6 py-4">
-                <div class="text-xl mb-2 text-center">
-                  Collares $50
-                </div>
+            <div class="producto mr-4 mb-8">
+              <div class="principal-img w-64 h-64">
+                <div class="shadow w-64 h-64" />
+                <img class="w-full max-w-sm rounded-md" src="https://ae01.alicdn.com/kf/Hcd8a89a0f11645d38e8b0b2a24b8787dH/Classic-Women-s-Casual-Quartz-Leather-Band-Strap-Watch-Round-Analog-Clock-Wrist-Watches.jpg_220x220xz.jpg_.webp" alt="Producto" loading="lazy">
               </div>
-            </div>
-          </section>
-          <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
-            <div class="bg-white max-w-sm rounded overflow-hidden shadow-lg mr-4 mb-4">
-              <img class="w-full" src="https://scontent.ftru2-3.fna.fbcdn.net/v/t1.0-9/12931187_873954479400051_8645130464251015395_n.jpg?_nc_cat=101&_nc_sid=8bfeb9&_nc_eui2=AeGw5Hp_VExEFGVwl3_MORixExKKVRv-fS8TEopVG_59L9Ccgrm2Osdzqus2o9pGiTL_L_b3jn6jytRRiib6Mu5X&_nc_ohc=PcHwXho9veUAX8i4p6r&_nc_ht=scontent.ftru2-3.fna&oh=adeb2e75eab1aa97a7b415c56cbcde13&oe=5EFF73E9" alt="Producto" loading="lazy">
-              <div class="px-6 py-4">
-                <div class="text-xl mb-2 text-center">
-                  Collares $50
+              <div class="footer-img">
+                <div class="font-semibold text-xl mb-2 pt-2">
+                  PEN 20,50
+                </div>
+                <div class="mb-2 ">
+                  Reloj clásico informal
                 </div>
               </div>
             </div>
@@ -178,6 +188,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.shadow{
+  background: #000;
+  border-radius: 12px;
+  opacity: .04;
+  z-index: 1;
+  position: absolute;
+  cursor: pointer;
+}
 .slider {
   background-size: cover;
   background-position: center;
