@@ -62,9 +62,9 @@
         <section class="productos_inicio flex flex-wrap">
           <section class="producto_inicio sm:w-1/2 md:w-1/3 xl:w-1/4">
             <div class="producto mr-4 mb-8">
-              <div class="principal-img w-64 h-64">
+              <div class="principal-img">
                 <div class="shadow w-64 h-64" />
-                <img class="w-full max-w-sm rounded-md" src="http://ae01.alicdn.com/kf/H9c06364bc49143aaa4a01ca8920da3453.jpg_350x350.jpg_.webp" alt="Producto" loading="lazy">
+                <img class="max-w-sm rounded-md w-64 h-64" src="https://web-bisuteria.now.sh/images/img_data/aretes/aretes1.jpg" alt="Producto" loading="lazy">
               </div>
               <div class="footer-img">
                 <div class="font-semibold text-xl mb-2 pt-2">

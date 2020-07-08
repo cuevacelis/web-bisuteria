@@ -10,6 +10,7 @@
     </section>
     <section class="Productos">
       <Producto tipo="Aretes" />
+      <Producto tipo="Relojes" />
     </section>
   </section>
 </template>

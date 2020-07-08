@@ -1,0 +1,14 @@
+{
+  "Tipo": "Producto",
+  "Categoria": "Relojes",
+  "Articulos": [
+    {
+      "nombreProducto": "Aretes de Perla", 
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/relojes/reloj1.jpg" 
+    },
+    {
+      "nombreProducto": "Aretes de Perla", 
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/relojes/reloj1.jpg" 
+    }
+  ]
+}
