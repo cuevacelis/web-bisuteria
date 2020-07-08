@@ -137,7 +137,6 @@ export default {
 .texto__slider{
   color: rgb(24, 24, 24);
   font-size: inherit;
-  line-height: 1.4rem;
   margin: 5px 0 0;
   max-height: 36px;
   overflow: hidden;
