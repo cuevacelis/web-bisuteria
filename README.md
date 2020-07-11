@@ -3,7 +3,7 @@
 Proyecto de una Web de Bisuteria con NuxtJS incluyendo mejoras de SEO con "SSR" ó "Generador de Sitios Estaticos".<br />
 [click aqui](https://web-bisuteria.now.sh/)
 
-![Global info](https://raw.githubusercontent.com/cuevacelis/covid-19-api/master/github/Captura1.JPG)
+![Global info](https://raw.githubusercontent.com/cuevacelis/web-bisuteria/master/github/Captura1.JPG)
 
 ## Motivación
 
