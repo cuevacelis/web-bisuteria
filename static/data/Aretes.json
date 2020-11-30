@@ -2,40 +2,40 @@
   "Tipo": "Producto",
   "Categoria": "Aretes",
   "Articulos": [
-    { 
-      "id":"1",
-      "nombreProducto": "Pendientes con accesorios de mar", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes1.jpg" 
+    {
+      "id": "1",
+      "nombreProducto": "Pendientes con accesorios de mar",
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes1.jpg"
     },
-    { 
-      "id":"2",
-      "nombreProducto": "Pendientes con accesorios de mar", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes2.jpg" 
+    {
+      "id": "2",
+      "nombreProducto": "Pendientes con accesorios de mar",
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes2.jpg"
     },
-    { 
-      "id":"3",
-      "nombreProducto": "Pendientes con accesorios de mar", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes3.jpg" 
+    {
+      "id": "3",
+      "nombreProducto": "Pendientes con accesorios de mar",
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes3.jpg"
     },
-    { 
-      "id":"4",
-      "nombreProducto": "Pendientes de perla", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes4.jpg" 
+    {
+      "id": "4",
+      "nombreProducto": "Pendientes de perla",
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes4.jpg"
     },
-    { 
-      "id":"5",
-      "nombreProducto": "Pendientes de perla", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes5.jpg" 
+    {
+      "id": "5",
+      "nombreProducto": "Pendientes de perla",
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes5.jpg"
     },
-    { 
-      "id":"6",
-      "nombreProducto": "Pendientes de perlar", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes6.jpg" 
+    {
+      "id": "6",
+      "nombreProducto": "Pendientes de perlar",
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes6.jpg"
     },
-    { 
-      "id":"7",
-      "nombreProducto": "Pendientes con accesorios de mar", 
-      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes7.jpg" 
+    {
+      "id": "7",
+      "nombreProducto": "Pendientes con accesorios de mar",
+      "urlImagen": "https://web-bisuteria.now.sh/images/img_data/aretes/aretes7.jpg"
     }
   ]
 }
