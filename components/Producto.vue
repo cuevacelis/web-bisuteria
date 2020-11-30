@@ -48,7 +48,7 @@
 <script>
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import { VclFacebook } from 'vue-content-loading'
-import 'swiper/css/swiper.css'
+// import 'swiper/css/swiper.css'
 
 export default {
   components: {
