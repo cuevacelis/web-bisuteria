@@ -8,14 +8,14 @@ Proyecto de una Web de Bisuteria con NuxtJS incluyendo mejoras de SEO con "SSR" 
 ## Motivación
 
 ### El Frontend de Hoy 
-Las librerias, frameworks mas utilizados son [AngularJS](https://angular.io/), [ReactJS](https://reactjs.org/) y por ultimo y no menos importante [VueJS](https://vuejs.org/) <br />
+Las librerias, frameworks mas utilizados son [AngularJS](https://angular.io/), [ReactJS](https://reactjs.org/), [VueJS](https://vuejs.org/), etc <br />
 Las Single Page Applications son páginas web que **funcionan extraordinariamente rápido**, incluso cuando navegamos entre diferentes páginas. <br />
 
 ## Problema
-El princial problema de las Web construidas con SPA radica , en que antes de poder acceder al contenido se necesitan descargar gran parte de de JS lo cual puede tardar varios segundos.
+El princial problema de los website basados en SPA, es que antes de poder acceder al contenido se necesitan descargar gran parte de JS.
 
 ### Problemas con SEO
-Si el SEO es tu prioridad, una Single Page Application no debes usar.<br />
+Si el SEO es tu prioridad, una Single Page Application(SPA) no debes usar.<br />
 Combatir este problema es la prioridad el "Server Rendering" y el "Generados de Sitios Estaticos" son dos muy buenas opciones que puedes usar.
 
 ### ¿Necesito SEO en mis proyectos?
